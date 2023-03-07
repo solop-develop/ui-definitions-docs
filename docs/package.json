@@ -1,0 +1,12 @@
+{
+  "name": "docs-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "elsiosanchez <elsiosanches@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
