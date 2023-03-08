@@ -1,0 +1,24 @@
+{
+  "name": "ui-definitions-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/solop-develop/ui-definitions-docs.git",
+  "author": "elsiosanchez <elsiosanches@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.61"
+  },
+  "dependencies": {
+    "yarn": "^1.22"
+  },
+  "engines": {
+    "node": ">= v18",
+    "npm": ">= 9",
+    "yarn": ">= 1.22"
+  }
+}

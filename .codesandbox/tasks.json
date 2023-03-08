@@ -1,0 +1,11 @@
+{
+  "setupTasks": [],
+
+  "tasks": {
+    "install && dev": {
+      "name": "install && dev",
+      "command": "yarn install && yarn docs:dev",
+      "runAtStart": true
+    }
+  }
+}
