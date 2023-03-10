@@ -23,7 +23,7 @@ jobs:
     name: Build dist epale
     runs-on: ubuntu-latest
     env:
-      BASE_REPOSITORY: ${{ github.repository }}
+      BASE_REPOSITORY: ${{ github.env.repository.name }}
 
     steps:
       - name: Check out the repo
@@ -34,12 +34,6 @@ jobs:
         with:
           node-version: 18.x
           cache: 'yarn'
-
-      - name: Enable https to install packages
-        run: git config --global url."https://".insteadOf git://
-
-      - name: Install packages lerna
-        run: yarn global add lerna
 
       - name: Update sub module
         run: git submodule update --init --remote
@@ -57,7 +51,7 @@ jobs:
         run: echo "$BASE_REPOSITORY"
 
       - name: github
-        run: echo "${{ github.repository }}"
+        run: echo "${{ github.env.repository.name }}"
 
       - name: Upload dist app
         uses: actions/upload-artifact@v3
