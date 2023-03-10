@@ -27,6 +27,8 @@ jobs:
     name: Build and deploy docs
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      BASE_REPOSITORY: ${{ github.event.repository.name }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -42,11 +44,11 @@ jobs:
       - name: Enable https to install packages
         run: git config --global url."https://".insteadOf git://
 
+      - name: Install packages
+        run:  yarn ci
+
       - name: Generate static vuepress files
-        run: |
-          yarn ci
-          dc docs
-          yarn docs:build
+        run: yarn docs:build
 
       - name: Upload dist docs
         uses: actions/upload-artifact@v3
