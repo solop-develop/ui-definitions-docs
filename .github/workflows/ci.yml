@@ -23,11 +23,14 @@ jobs:
     name: Build dist epale
     runs-on: ubuntu-latest
     env:
-      BASE_REPOSITORY: ${{ github.env.repository.name }}
+      BASE_REPOSITORY: ${{ github.event.repository.name }}
 
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
+
+      # - name: add
+      #   run: echo "BASE_REPOSITORY=${{ github.event.repository.name }}" >> $GITHUB_ENV
 
       - name: Node configuration
         uses: actions/setup-node@v3
@@ -51,7 +54,7 @@ jobs:
         run: echo "$BASE_REPOSITORY"
 
       - name: github
-        run: echo "${{ github.env.repository.name }}"
+        run: echo "${{ github.event.repository.name }}"
 
       - name: Upload dist app
         uses: actions/upload-artifact@v3
