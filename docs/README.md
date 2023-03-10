@@ -1,129 +1,184 @@
-<spam id="epale" ref="alo">
+<span id="epale" ref="alo">
 
-<!-- # Component -->
+# Atoms
 
-# Átomos
+## Button
 
-## Botón
+Commonly used button.
 
-**El componente del botón base. Este componente funcional de Vue3, Nuxt3 y Element-Plus.**
+### Basic usage
 
-### Tipo de Botón
+Use type, plain, round and circle to define Button's style.
 
-**Botones comúnmente usados**
+<Button />
 
-<iframe
-src="https://codesandbox.io/embed/docs-component-atom-button-all-type-7x5mmj?file=/src/App.vue?view=preview&hidenavigation=1&9"
-style="width:100%; height:400px; border:0; border-radius: 4px; overflow:auto;"
-allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
-
-#### Codigo
+#### Viwer Source
 
 ```vue
-<template>
-	<div style="text-align: center">
-		<P style="text-align: center">
-			<el-button>Defecto</el-button>
-			<el-button type="primary">Primario</el-button>
-			<el-button type="success">Éxito</el-button>
-			<el-button type="info">Información</el-button>
-			<el-button type="warning">Advertencia</el-button>
-			<el-button type="danger">Peligro</el-button>
-		</P>
+  <template>
+    <el-row class="mb-4">
+      <el-button>Default</el-button>
+      <el-button type="primary">Primary</el-button>
+      <el-button type="success">Success</el-button>
+      <el-button type="info">Info</el-button>
+      <el-button type="warning">Warning</el-button>
+      <el-button type="danger">Danger</el-button>
+    </el-row>
 
-		<P>
-			<el-button plain>Plano</el-button>
-			<el-button type="primary" plain>Primario</el-button>
-			<el-button type="success" plain>Éxito</el-button>
-			<el-button type="info" plain>Información</el-button>
-			<el-button type="warning" plain>Advertencia</el-button>
-			<el-button type="danger" plain>Peligro</el-button>
-		</P>
-	</div>
-</template>
+    <el-row class="mb-4">
+      <el-button plain>Plain</el-button>
+      <el-button type="primary" plain>Primary</el-button>
+      <el-button type="success" plain>Success</el-button>
+      <el-button type="info" plain>Info</el-button>
+      <el-button type="warning" plain>Warning</el-button>
+      <el-button type="danger" plain>Danger</el-button>
+    </el-row>
+
+    <el-row class="mb-4">
+      <el-button round>Round</el-button>
+      <el-button type="primary" round>Primary</el-button>
+      <el-button type="success" round>Success</el-button>
+      <el-button type="info" round>Info</el-button>
+      <el-button type="warning" round>Warning</el-button>
+      <el-button type="danger" round>Danger</el-button>
+    </el-row>
+
+    <el-row>
+      <el-button :icon="Search" circle />
+      <el-button type="primary" :icon="Edit" circle />
+      <el-button type="success" :icon="Check" circle />
+      <el-button type="info" :icon="Message" circle />
+      <el-button type="warning" :icon="Star" circle />
+      <el-button type="danger" :icon="Delete" circle />
+    </el-row>
+  </template>
+
+  <script lang="ts" setup>
+  import {
+    Check,
+    Delete,
+    Edit,
+    Message,
+    Search,
+    Star,
+  } from '@element-plus/icons-vue'
+  </script>
 ```
 
-### Botón deshabilitado
+### Disabled Button
 
-**El atributo disabled determina su un botón esta deshabilitado.**
+The `disabled` attribute determines if the button is disabled.
 
-<iframe
-	src="https://codesandbox.io/embed/docs-component-atom-button-disable-gis8ni?file=/src/App.vue?view=preview&hidenavigation=1&9"
-	style="width:100%; height:250px; border:0; border-radius: 4px; overflow:hidden;"
-	allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-	sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+Use `disabled` attribute to determine whether a button is disabled. It accepts a Boolean value.
 
-#### Codigo
+<ButtonDisabled />
+
+#### Viwer Source
 
 ```vue
-<template>
-	<div>
-		<el-button :disabled="true">
-			{{ input }}
-		</el-button>
-		<el-button :disabled="false">
-			{{ input }}
-		</el-button>
-	</div>
-</template>
+  <template>
+    <el-row class="mb-4">
+      <el-button disabled>Default</el-button>
+      <el-button type="primary" disabled>Primary</el-button>
+      <el-button type="success" disabled>Success</el-button>
+      <el-button type="info" disabled>Info</el-button>
+      <el-button type="warning" disabled>Warning</el-button>
+      <el-button type="danger" disabled>Danger</el-button>
+    </el-row>
+
+    <el-row>
+      <el-button plain disabled>Plain</el-button>
+      <el-button type="primary" plain disabled>Primary</el-button>
+      <el-button type="success" plain disabled>Success</el-button>
+      <el-button type="info" plain disabled>Info</el-button>
+      <el-button type="warning" plain disabled>Warning</el-button>
+      <el-button type="danger" plain disabled>Danger</el-button>
+    </el-row>
+  </template>
 ```
 
-### Botón de descarga
+### Loading Button
+  Click the button to load data, then the button displays a loading state.
 
-**Cuando se hace clic en un botón para descargar datos, el botón muestra un estado de descarga.** <br>
-*Ajuste el atributo loading a true para mostrar el estado de descarga*
+  Set `loading` attribute to `true` to display loading state.
 
-<iframe
-	src="https://codesandbox.io/embed/docs-component-atom-button-loading-slkiy6?file=/src/App.vue?view=preview&hidenavigation=1&9"
-	style="width:100%; height:250px; border:0; border-radius: 4px; overflow:hidden;"
-	allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-	sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+::: TIP
+  You can use the `loading` slot or `loadingIcon` to customize your loading component
 
-#### Codigo
+  ps: `loading` slot has higher priority than `loadingIcon`
+:::
+
+<loadingButton />
+
+#### Viwer Source
 
 ```vue
-<template>
-	<div>
-		<el-button type="primary" :loading="true">Cargando</el-button>
-	</div>
-</template>
+  <template>
+    <el-row class="mb-4">
+      <el-button type="primary" loading>Loading</el-button>
+      <el-button type="primary" :loading-icon="Eleme" loading>Loading</el-button>
+    </el-row>
+  </template>
 ```
 
-#### Codesandbox
+### Sizes
 
-<iframe
-	src="https://codesandbox.io/embed/docs-component-atom-button-dcr72v?from-embed=&file=/src/App.vue?view=preview&hidenavigation=1&9"
-	style="width:100%; height:850px; border:0; border-radius: 4px; overflow:auto;"
-	allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-	sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+Besides default size, Button component provides three additional sizes for you to choose among different scenarios.
 
-#### **Atributos**
+Use attribute `size` to set additional sizes with `large`, `small`.
 
-|   Nombre    | Descriptión | Valor por Defecto |   Tipo de Valor   | Valores aceptados |
-| :---------: | :-----------: | :-----------------: | :-----------: | :---------------: |
-|    text  | Contenido a mostrar dentro del Botón  |  -  | String |  Texto |
-|    type  | El Botón tiene diferente tipos [ Primary, Success, Info, Warning, Danger ]    | - | String | primary / success / warning / danger / info / text |
-|  disabled | El atributo disabled determina su un botón esta deshabilitado | False | Boolean | — |
-|  plain | determinar si es o no un botón plano | False | Boolean | — |
-|  loading | Ajuste el atributo loading a true para mostrar el estado de descarga | False | Boolean | — |
+<ButtonSize />
 
-#### **Estructura**
+#### Viwer Source
+
+```vue
+  <template>
+    <el-row>
+      <el-button size="large">Large</el-button>
+      <el-button>Default</el-button>
+      <el-button size="small">Small</el-button>
+      <el-button size="large" :icon="Search">Search</el-button>
+      <el-button :icon="Search">Search</el-button>
+      <el-button size="small" :icon="Search">Search</el-button>
+    </el-row>
+  </template>
+```
+
+### Example
+
+Basic example with all the button attributes
+
+<br>
+
+<ButtonExample />
+
+### Button Attributes
+
+|   Name    | Description | Type   | Default |
+| :---------: | :-----------: | :-----------------: | :-----------: |
+|    size  | button size  |  `enum` |  ——— |
+|    type  | button type [ `Primary`, `Success`, `Info`, `Warning`, `Danger` ]    |  `enum` |  ——— |
+|  disabled | disable the button | `Boolean` | False |
+|  plain | determine whether it's a plain button   | `Boolean` | False |
+|  round | determine whether it's a round button   | `Boolean` | False |
+|  circle | determine whether it's a circle button  | `Boolean` | False |
+|  loading | determine whether it's loading |  `Boolean` | False |
+|  loading-icon | customize loading icon component | `string` / `Component` | Loading |
+
+### Developer Options
 
 ```bash
-		└─ src                           # Código fuente principal
-				└── components               # Componentes globales
-								└─ Atoms             # Componentes Átomos
-										└── buttom       # Componentes específicos del Botón
+  └─ src                                            # Main source code.
+      └── components                                # Global components
+              └── Atoms                             # Atom components
+                  └── buttom                        # Button specific components.
 ```
-</spam>
+
+
+</span>
 
 <style>
-:root {
---content-width: 1300px !important;
-}
+	:root {
+	--content-width: 1300px !important;
+	}
 </style>
