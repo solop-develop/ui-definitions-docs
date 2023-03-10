@@ -6,7 +6,6 @@ import ButtonDisabled from './Component/ButtonDisabled.vue'
 import loadingButton from './Component/loadingButton.vue'
 import ButtonSize from './Component/ButtonSize.vue'
 import ButtonExample from './Component/ButtonExample.vue'
-import Markdown from 'vue3-markdown-it';
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
     app.use(ElementPlus)
