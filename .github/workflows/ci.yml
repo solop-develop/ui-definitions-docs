@@ -38,9 +38,6 @@ jobs:
           node-version: 18.x
           cache: 'yarn'
 
-      - name: Update sub module
-        run: git submodule update --init --remote
-
       - name: Install packages
         run: yarn ci
 
