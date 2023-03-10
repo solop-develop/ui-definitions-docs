@@ -9,7 +9,6 @@ import ButtonExample from './Component/ButtonExample.vue'
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
     app.use(ElementPlus)
-    app.use(Markdown)
     app.component('Button', Button)
     app.component('ButtonDisabled', ButtonDisabled)
     app.component('loadingButton', loadingButton)
