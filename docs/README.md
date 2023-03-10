@@ -144,6 +144,14 @@ Use attribute `size` to set additional sizes with `large`, `small`.
   </template>
 ```
 
+### Example
+
+Basic example with all the button attributes
+
+<br>
+
+<ButtonExample />
+
 ### Button Attributes
 
 |   Name    | Description | Type   | Default |
@@ -160,10 +168,10 @@ Use attribute `size` to set additional sizes with `large`, `small`.
 ### Developer Options
 
 ```bash
-		└─ src                          # Main source code.
-				└── components              # Global components
-								└── Atoms           # Atom components
-										└── buttom     # Button specific components.
+  └─ src                                            # Main source code.
+      └── components                                # Global components
+              └── Atoms                             # Atom components
+                  └── buttom                        # Button specific components.
 ```
 
 
