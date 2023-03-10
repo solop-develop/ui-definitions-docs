@@ -48,16 +48,16 @@ jobs:
         run: yarn ci
 
       - name: test-name
-        run: echo $BASE_REPOSITORY
+        run: echo "$BASE_REPOSITORY"
 
       - name: Compile dist
         run: yarn docs:build
 
       - name: test
-        run: echo $BASE_REPOSITORY
+        run: echo "$BASE_REPOSITORY"
 
       - name: github
-        run: echo ${{ github.repository }}
+        run: echo "${{ github.repository }}"
 
       - name: Upload dist app
         uses: actions/upload-artifact@v3
