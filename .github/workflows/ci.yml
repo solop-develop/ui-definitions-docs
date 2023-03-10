@@ -22,6 +22,8 @@ jobs:
   build-app:
     name: Build dist epale
     runs-on: ubuntu-latest
+    env:
+      BASE_REPOSITORY: ${{ github.repository }}
 
     steps:
       - name: Check out the repo
@@ -45,11 +47,20 @@ jobs:
       - name: Install packages
         run: yarn ci
 
+      - name: test-name
+        run: echo $BASE_REPOSITORY
+
       - name: Compile dist
         run: yarn docs:build
+
+      - name: test
+        run: echo $BASE_REPOSITORY
+
+      - name: github
+        run: echo ${{ github.repository }}
 
       - name: Upload dist app
         uses: actions/upload-artifact@v3
         with:
-          name: adempiere-vue-docs
+          name: docs
           path: docs/.vuepress/dist
