@@ -74,10 +74,10 @@ import {
   }
 </style>
 <style>
-  .el-card.is-always-shadow {
+  /* .el-card.is-always-shadow {
     background: transparent;
     color: transparent;
-  }
+  } */
   .el-row {
     margin-bottom: 20px;
   }
