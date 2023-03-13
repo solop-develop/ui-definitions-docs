@@ -23,55 +23,6 @@
     <el-divider content-position="center">
       {{ '(Attributes and Props) Button' }}
     </el-divider>
-    <!-- <el-form
-      label-position="top"
-      label-width="100px"
-      :inline="true"
-    >
-      <el-form-item label="Button Content">
-        <el-input v-model="text" placeholder="Button Content" />
-      </el-form-item>
-      <el-form-item label="Type Button">
-        <el-select v-model="typoButton" class="m-2" placeholder="Select" size="large">
-            <el-option
-              v-for="item in optionsType"
-              :key="item.value"
-              :label="item.label"
-              :value="item.value"
-            />
-          </el-select>
-      </el-form-item>
-      <el-form-item label="Disabled Button">
-        <el-switch
-          v-model="isDisable"
-          style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-        />
-      </el-form-item>
-      <el-form-item label="Loading Button">
-        <el-switch
-          v-model="isLoading"
-          style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-        />
-      </el-form-item>
-      <el-form-item label="Plain Button">
-        <el-switch
-          v-model="isPlain"
-          style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-        />
-      </el-form-item>
-      <el-form-item label="Round Button">
-        <el-switch
-          v-model="isRound"
-          style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-        />
-      </el-form-item>
-      <el-form-item label="Circle Button">
-        <el-switch
-          v-model="isCircle"
-          style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-        />
-      </el-form-item>
-    </el-form> -->
     <br>
     <el-form
       label-position="top"
@@ -83,16 +34,6 @@
           <el-option label="Default" value="" />
           <el-option label="Large" value="large" />
           <el-option label="Small" value="small" />
-        </el-select>
-      </el-form-item>
-      <el-form-item label="Icon Button">
-        <el-select v-model="iconButton" class="m-2" placeholder="Select" size="large">
-          <el-option label="Default" value="" />
-          <el-option label="Check" :value="Check" />
-          <el-option label="Delete" :value="Delete" />
-          <el-option label="Edit" :value="Edit" />
-          <el-option label="Message" :value="Message" />
-          <el-option label="Search" :value="Search" />
         </el-select>
       </el-form-item>
       <el-form-item label="Enable Slots Header">
@@ -217,10 +158,10 @@ const onSubmit = (action, option) => {
   }
 </style>
 <style>
-  .el-card.is-always-shadow {
+  /* .el-card.is-always-shadow {
     background: transparent;
     color: transparent;
-  }
+  } */
   .el-row {
     margin-bottom: 20px;
   }
