@@ -144,7 +144,7 @@ Use attribute `size` to set additional sizes with `large`, `small`.
   </template>
 ```
 
-### Example
+### Basic Example
 
 Basic example with all the button attributes
 
@@ -179,7 +179,7 @@ Basic example with all the button attributes
 | `footer` | Customize Default Content Bottom |
 
 
-### Developer Example
+### Example for Developer
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/elsiosanchez/AD-Buttton-Nuxt)
