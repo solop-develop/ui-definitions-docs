@@ -1,11 +1,6 @@
 <template>
   <el-card class="box-card">
-    <el-form
-    label-position="top"
-    label-width="100px"
-    :inline="true"
-  >
-    <el-form-item label="Button">
+    <p style="text-align: center;">
       <el-button
         :type="typoButton"
         :disabled="isDisable"
@@ -18,7 +13,15 @@
       >
         {{ text }}
       </el-button>
-      </el-form-item>
+    </p>
+    <el-divider content-position="center">
+      {{ '(Attributes and Props) Button' }}
+    </el-divider>
+    <el-form
+      label-position="top"
+      label-width="100px"
+      :inline="true"
+    >
       <el-form-item label="Button Content">
         <el-input v-model="text" placeholder="Button Content" />
       </el-form-item>
@@ -44,7 +47,7 @@
           style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
         />
       </el-form-item>
-      <el-form-item label="Size Button">
+      <!-- <el-form-item label="Size Button">
         <el-select v-model="sizeButton" class="m-2" placeholder="Select" size="large">
             <el-option
               v-for="item in listSize"
@@ -53,7 +56,7 @@
               :value="item.value"
             />
           </el-select>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item label="Plain Button">
         <el-switch
           v-model="isPlain"
@@ -72,7 +75,7 @@
           style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
         />
       </el-form-item>
-      <el-form-item label="Icon Button">
+      <!-- <el-form-item label="Icon Button">
         <el-select v-model="iconButton" class="m-2" placeholder="Select" size="large">
             <el-option
               v-for="item in optionsIcon"
@@ -81,7 +84,7 @@
               :value="item.value"
             />
           </el-select>
-      </el-form-item>
+      </el-form-item> -->
     </el-form>
   </el-card>
 </template>
