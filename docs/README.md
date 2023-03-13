@@ -8,7 +8,7 @@ Commonly used button.
 
 ### Basic usage
 
-Use type, plain, round and circle to define Button's style.
+Use `type`, `plain`, `round` and `circle` to define Button's style.
 
 <Button />
 
@@ -69,7 +69,7 @@ Use type, plain, round and circle to define Button's style.
 
 The `disabled` attribute determines if the button is disabled.
 
-Use `disabled` attribute to determine whether a button is disabled. It accepts a Boolean value.
+Use `disabled` attribute to determine Whether a button is disabled. It accepts a Boolean value.
 
 <ButtonDisabled />
 
@@ -152,20 +152,41 @@ Basic example with all the button attributes
 
 <ButtonExample />
 
-### Button Attributes
+### Props
 
-|   Name    | Description | Type   | Default |
-| :---------: | :-----------: | :-----------------: | :-----------: |
-|    size  | button size  |  `enum` |  ——— |
-|    type  | button type [ `Primary`, `Success`, `Info`, `Warning`, `Danger` ]    |  `enum` |  ——— |
-|  disabled | disable the button | `Boolean` | False |
-|  plain | determine whether it's a plain button   | `Boolean` | False |
-|  round | determine whether it's a round button   | `Boolean` | False |
-|  circle | determine whether it's a circle button  | `Boolean` | False |
-|  loading | determine whether it's loading |  `Boolean` | False |
-|  loading-icon | customize loading icon component | `string` / `Component` | Loading |
+  |   Name    | Description | Type  | Required |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `txt`  | Binding Value  | <el-tag effect="Light">  {{ 'String' }} </el-tag> <el-tag effect="Light">  {{ 'Array' }} </el-tag> <el-tag effect="Light">  {{ 'Object' }} </el-tag> <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
 
-### Developer Options
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `size`  | Button Size  | <el-tag effect="Light">  {{ 'large' }} <el-divider direction="vertical" /> {{ 'default' }}  <el-divider direction="vertical" /> {{ 'small' }}  </el-tag> |  ——— |
+  |    `type`  | Button type   |  <el-tag effect="Light">  <el-tag effect="Light">  {{ 'Primary' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="success">  {{ 'Success' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="info">  {{ 'Info' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="warning">  {{ 'Warning' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="danger">  {{ 'Danger' }} </el-tag> </el-tag>  |  ——— |
+  |  `disabled` | Disable the Button | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `plain` | Determine Whether it's a Plain Button   | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag>  |
+  |  `round` | Determine Whether it's a Round Button   | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `circle` | Determine Whether it's a Circle Button  | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `loading` | Determine Whether it's Loading |  `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+
+### Slots
+
+|   Name    | Description |
+| :---------: | :-----------: |
+| `header` | Customize Default Content Top |
+| `content` | Customize Default Content |
+| `footer` | Customize Default Content Bottom |
+
+
+### Developer Example
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/elsiosanchez/AD-Buttton-Nuxt)
+
+
+### Directory
+
 
 ```bash
   └─ src                                            # Main source code.
