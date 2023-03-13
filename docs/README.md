@@ -2,7 +2,7 @@
 
 # Atoms
 
-## Button
+## Field Button
 
 Commonly used button.
 
@@ -17,39 +17,39 @@ Use `type`, `plain`, `round` and `circle` to define Button's style.
 ```vue
   <template>
     <el-row class="mb-4">
-      <el-button>Default</el-button>
-      <el-button type="primary">Primary</el-button>
-      <el-button type="success">Success</el-button>
-      <el-button type="info">Info</el-button>
-      <el-button type="warning">Warning</el-button>
-      <el-button type="danger">Danger</el-button>
+      <field-button>Default</field-button>
+      <field-button type="primary">Primary</field-button>
+      <field-button type="success">Success</field-button>
+      <field-button type="info">Info</field-button>
+      <field-button type="warning">Warning</field-button>
+      <field-button type="danger">Danger</field-button>
     </el-row>
 
     <el-row class="mb-4">
-      <el-button plain>Plain</el-button>
-      <el-button type="primary" plain>Primary</el-button>
-      <el-button type="success" plain>Success</el-button>
-      <el-button type="info" plain>Info</el-button>
-      <el-button type="warning" plain>Warning</el-button>
-      <el-button type="danger" plain>Danger</el-button>
+      <field-button plain>Plain</field-button>
+      <field-button type="primary" plain>Primary</field-button>
+      <field-button type="success" plain>Success</field-button>
+      <field-button type="info" plain>Info</field-button>
+      <field-button type="warning" plain>Warning</field-button>
+      <field-button type="danger" plain>Danger</field-button>
     </el-row>
 
     <el-row class="mb-4">
-      <el-button round>Round</el-button>
-      <el-button type="primary" round>Primary</el-button>
-      <el-button type="success" round>Success</el-button>
-      <el-button type="info" round>Info</el-button>
-      <el-button type="warning" round>Warning</el-button>
-      <el-button type="danger" round>Danger</el-button>
+      <field-button round>Round</field-button>
+      <field-button type="primary" round>Primary</field-button>
+      <field-button type="success" round>Success</field-button>
+      <field-button type="info" round>Info</field-button>
+      <field-button type="warning" round>Warning</field-button>
+      <field-button type="danger" round>Danger</field-button>
     </el-row>
 
     <el-row>
-      <el-button :icon="Search" circle />
-      <el-button type="primary" :icon="Edit" circle />
-      <el-button type="success" :icon="Check" circle />
-      <el-button type="info" :icon="Message" circle />
-      <el-button type="warning" :icon="Star" circle />
-      <el-button type="danger" :icon="Delete" circle />
+      <field-button :icon="Search" circle />
+      <field-button type="primary" :icon="Edit" circle />
+      <field-button type="success" :icon="Check" circle />
+      <field-button type="info" :icon="Message" circle />
+      <field-button type="warning" :icon="Star" circle />
+      <field-button type="danger" :icon="Delete" circle />
     </el-row>
   </template>
 
@@ -78,21 +78,21 @@ Use `disabled` attribute to determine Whether a button is disabled. It accepts a
 ```vue
   <template>
     <el-row class="mb-4">
-      <el-button disabled>Default</el-button>
-      <el-button type="primary" disabled>Primary</el-button>
-      <el-button type="success" disabled>Success</el-button>
-      <el-button type="info" disabled>Info</el-button>
-      <el-button type="warning" disabled>Warning</el-button>
-      <el-button type="danger" disabled>Danger</el-button>
+      <field-button disabled>Default</field-button>
+      <field-button type="primary" disabled>Primary</field-button>
+      <field-button type="success" disabled>Success</field-button>
+      <field-button type="info" disabled>Info</field-button>
+      <field-button type="warning" disabled>Warning</field-button>
+      <field-button type="danger" disabled>Danger</field-button>
     </el-row>
 
     <el-row>
-      <el-button plain disabled>Plain</el-button>
-      <el-button type="primary" plain disabled>Primary</el-button>
-      <el-button type="success" plain disabled>Success</el-button>
-      <el-button type="info" plain disabled>Info</el-button>
-      <el-button type="warning" plain disabled>Warning</el-button>
-      <el-button type="danger" plain disabled>Danger</el-button>
+      <field-button plain disabled>Plain</field-button>
+      <field-button type="primary" plain disabled>Primary</field-button>
+      <field-button type="success" plain disabled>Success</field-button>
+      <field-button type="info" plain disabled>Info</field-button>
+      <field-button type="warning" plain disabled>Warning</field-button>
+      <field-button type="danger" plain disabled>Danger</field-button>
     </el-row>
   </template>
 ```
@@ -102,11 +102,14 @@ Use `disabled` attribute to determine Whether a button is disabled. It accepts a
 
   Set `loading` attribute to `true` to display loading state.
 
-::: TIP
+::: tip
+
   You can use the `loading` slot or `loadingIcon` to customize your loading component
 
   ps: `loading` slot has higher priority than `loadingIcon`
 :::
+
+<br>
 
 <loadingButton />
 
@@ -115,8 +118,8 @@ Use `disabled` attribute to determine Whether a button is disabled. It accepts a
 ```vue
   <template>
     <el-row class="mb-4">
-      <el-button type="primary" loading>Loading</el-button>
-      <el-button type="primary" :loading-icon="Eleme" loading>Loading</el-button>
+      <field-button type="primary" loading>Loading</field-button>
+      <field-button type="primary" :loading-icon="Eleme" loading>Loading</field-button>
     </el-row>
   </template>
 ```
@@ -134,12 +137,12 @@ Use attribute `size` to set additional sizes with `large`, `small`.
 ```vue
   <template>
     <el-row>
-      <el-button size="large">Large</el-button>
-      <el-button>Default</el-button>
-      <el-button size="small">Small</el-button>
-      <el-button size="large" :icon="Search">Search</el-button>
-      <el-button :icon="Search">Search</el-button>
-      <el-button size="small" :icon="Search">Search</el-button>
+      <field-button size="large">Large</field-button>
+      <field-button>Default</field-button>
+      <field-button size="small">Small</field-button>
+      <field-button size="large" :icon="Search">Search</field-button>
+      <field-button :icon="Search">Search</field-button>
+      <field-button size="small" :icon="Search">Search</field-button>
     </el-row>
   </template>
 ```
@@ -154,21 +157,21 @@ Basic example with all the button attributes
 
 ### Props
 
-  |   Name    | Description | Type  | Required |
+  |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
-  |    `txt`  | Binding Value  | <el-tag effect="Light">  {{ 'String' }} </el-tag> <el-tag effect="Light">  {{ 'Array' }} </el-tag> <el-tag effect="Light">  {{ 'Object' }} </el-tag> <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+  |    `text`  | Binding Value  | <el-tag effect="Light">  {{ 'String' }} </el-tag> <el-tag effect="Light">  {{ 'Array' }} </el-tag> <el-tag effect="Light">  {{ 'Object' }} </el-tag> <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
 
 ### Attributes
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
-  |    `size`  | Button Size  | <el-tag effect="Light">  {{ 'large' }} <el-divider direction="vertical" /> {{ 'default' }}  <el-divider direction="vertical" /> {{ 'small' }}  </el-tag> |  ——— |
-  |    `type`  | Button type   |  <el-tag effect="Light">  <el-tag effect="Light">  {{ 'Primary' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="success">  {{ 'Success' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="info">  {{ 'Info' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="warning">  {{ 'Warning' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="danger">  {{ 'Danger' }} </el-tag> </el-tag>  |  ——— |
-  |  `disabled` | Disable the Button | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
-  |  `plain` | Determine Whether it's a Plain Button   | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag>  |
-  |  `round` | Determine Whether it's a Round Button   | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
-  |  `circle` | Determine Whether it's a Circle Button  | `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
-  |  `loading` | Determine Whether it's Loading |  `Boolean` | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |    `size`  | Button Size <el-tag effect="Light">  {{ 'large' }} <el-divider direction="vertical" /> {{ 'default' }}  <el-divider direction="vertical" /> {{ 'small' }}  </el-tag> | <el-tag effect="Light">  {{ 'String' }} </el-tag> |  —————— |
+  |    `type`  | Button type  <el-tag effect="Light">  <el-tag effect="Light">  {{ 'Primary' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="success">  {{ 'Success' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="info">  {{ 'Info' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="warning">  {{ 'Warning' }} </el-tag> <el-divider direction="vertical" /> <el-tag effect="Light" type="danger">  {{ 'Danger' }} </el-tag> </el-tag> |   <el-tag effect="Light">  {{ 'String' }} </el-tag>  |  —————— |
+  |  `disabled` | Disable the Button | <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `plain` | Determine Whether it's a Plain Button   | <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag>  |
+  |  `round` | Determine Whether it's a Round Button   | <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `circle` | Determine Whether it's a Circle Button  | <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `loading` | Determine Whether it's Loading |  <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
 
 ### Slots
 
@@ -182,7 +185,7 @@ Basic example with all the button attributes
 ### Example for Developer
 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/elsiosanchez/AD-Buttton-Nuxt)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/field-button?file=app.vue)
 
 
 ### Directory
@@ -190,9 +193,9 @@ Basic example with all the button attributes
 
 ```bash
   └─ src                                            # Main source code.
-      └── components                                # Global components
+      └── Components                                # Global components
               └── Atoms                             # Atom components
-                  └── buttom                        # Button specific components.
+                  └── FieldButtom                   # Field Button specific components.
 ```
 
 

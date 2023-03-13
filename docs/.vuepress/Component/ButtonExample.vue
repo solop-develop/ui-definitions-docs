@@ -23,7 +23,7 @@
     <el-divider content-position="center">
       {{ '(Attributes and Props) Button' }}
     </el-divider>
-    <el-form
+    <!-- <el-form
       label-position="top"
       label-width="100px"
       :inline="true"
@@ -53,16 +53,6 @@
           style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
         />
       </el-form-item>
-      <!-- <el-form-item label="Size Button">
-        <el-select v-model="sizeButton" class="m-2" placeholder="Select" size="large">
-            <el-option
-              v-for="item in listSize"
-              :key="item.value"
-              :label="item.label"
-              :value="item.value"
-            />
-          </el-select>
-      </el-form-item> -->
       <el-form-item label="Plain Button">
         <el-switch
           v-model="isPlain"
@@ -81,17 +71,7 @@
           style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
         />
       </el-form-item>
-      <!-- <el-form-item label="Icon Button">
-        <el-select v-model="iconButton" class="m-2" placeholder="Select" size="large">
-            <el-option
-              v-for="item in optionsIcon"
-              :key="item.value"
-              :label="item.label"
-              :value="item.value"
-            />
-          </el-select>
-      </el-form-item> -->
-    </el-form>
+    </el-form> -->
     <br>
     <el-form
       label-position="top"
