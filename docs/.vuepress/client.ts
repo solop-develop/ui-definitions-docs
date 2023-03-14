@@ -27,7 +27,20 @@ import DateFormats from './Component/Atom/FieldDatePiker/DateFormats.vue'
 import DatePikerBasic from './Component/Atom/FieldDatePiker/DatePikerBasic.vue'
 import DateRange from './Component/Atom/FieldDatePiker/DateRange.vue'
 import MonthRange from './Component/Atom/FieldDatePiker/MonthRange.vue'
-
+// Field Select
+import SelectBase from './Component/Atom/FieldSelect/SelectBase.vue'
+import SelectDisableOption from './Component/Atom/FieldSelect/SelectDisableOption.vue'
+import SelectDisable from './Component/Atom/FieldSelect/SelectDisable.vue'
+import SelectClearable from './Component/Atom/FieldSelect/SelectClearable.vue'
+import SelectMultipleSelect from './Component/Atom/FieldSelect/SelectMultipleSelect.vue'
+import SelectFilter from './Component/Atom/FieldSelect/SelectFilter.vue'
+// Field Number
+import NumberBsic from './Component/Atom/FieldNumber/NumberBsic.vue'
+import NumberDisabled from './Component/Atom/FieldNumber/NumberDisabled.vue'
+import NumberSteps from './Component/Atom/FieldNumber/NumberSteps.vue'
+import NumberStepsStrictly from './Component/Atom/FieldNumber/NumberStepsStrictly.vue'
+import NumberPrecision from './Component/Atom/FieldNumber/NumberPrecision.vue'
+import NumberControlsPosition from './Component/Atom/FieldNumber/NumberControlsPosition.vue'
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
@@ -58,6 +71,20 @@ export default defineClientConfig({
     app.component('DatePikerBasic', DatePikerBasic)
     app.component('DateRange', DateRange)
     app.component('MonthRange', MonthRange)
+    // Field Select
+    app.component('SelectBase', SelectBase)
+    app.component('SelectDisableOption', SelectDisableOption)
+    app.component('SelectDisable', SelectDisable)
+    app.component('SelectClearable', SelectClearable)
+    app.component('SelectMultipleSelect', SelectMultipleSelect)
+    app.component('SelectFilter', SelectFilter)
+    // Field Number
+    app.component('NumberBsic', NumberBsic)
+    app.component('NumberDisabled', NumberDisabled)
+    app.component('NumberSteps', NumberSteps)
+    app.component('NumberStepsStrictly', NumberStepsStrictly)
+    app.component('NumberPrecision', NumberPrecision)
+    app.component('NumberControlsPosition', NumberControlsPosition)
   },
   setup() {},
   rootComponents: [],
