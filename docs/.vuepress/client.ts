@@ -22,6 +22,11 @@ import SwitchIcon from './Component/Atom/FieldSwitch/SwitchIcon.vue'
 import SwitchLoading from './Component/Atom/FieldSwitch/SwitchLoading.vue'
 import SwitchSizes from './Component/Atom/FieldSwitch/SwitchSizes.vue'
 import SwitchText from './Component/Atom/FieldSwitch/SwitchText.vue'
+// Field Date
+import DateFormats from './Component/Atom/FieldDatePiker/DateFormats.vue'
+import DatePikerBasic from './Component/Atom/FieldDatePiker/DatePikerBasic.vue'
+import DateRange from './Component/Atom/FieldDatePiker/DateRange.vue'
+import MonthRange from './Component/Atom/FieldDatePiker/MonthRange.vue'
 
 
 export default defineClientConfig({
@@ -48,6 +53,11 @@ export default defineClientConfig({
     app.component('SwitchLoading', SwitchLoading)
     app.component('SwitchSizes', SwitchSizes)
     app.component('SwitchText', SwitchText)
+    // Field Date
+    app.component('DateFormats', DateFormats)
+    app.component('DatePikerBasic', DatePikerBasic)
+    app.component('DateRange', DateRange)
+    app.component('MonthRange', MonthRange)
   },
   setup() {},
   rootComponents: [],
