@@ -167,6 +167,7 @@ Basic example with all the button attributes
 
 ### Attributes
 
+
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `size`  | Button Size <el-tag effect="Light">  {{ 'large' }} <el-divider direction="vertical" /> {{ 'default' }}  <el-divider direction="vertical" /> {{ 'small' }}  </el-tag> | <el-tag effect="Light">  {{ 'String' }} </el-tag> |  —————— |
@@ -465,6 +466,635 @@ const textarea = ref('')
       └── Components                                # Global components
               └── Atoms                             # Atom components
                   └── FieldText                     # Field Text specific components.
+```
+
+
+## Switch
+
+Switch is used for switching between two opposing states.
+
+### Basic usage
+
+Bind `v-model` to a `Boolean` typed variable. The `--el-switch-on-color` and `--el-switch-off-color` CSS variables decides the background color in two states.
+
+<SwitchBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <field-switch v-model="value1" />
+  <field-switch
+    v-model="value2"
+    class="ml-2"
+    style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
+  />
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value1 = ref(true)
+const value2 = ref(true)
+</script>
+
+```
+
+### Sizes
+
+<SwitchSizes />
+
+#### Viwer Source
+
+```vue
+<template>
+  <field-switch
+    v-model="value"
+    size="large"
+    active-text="Open"
+    inactive-text="Close"
+  />
+  <br />
+  <field-switch v-model="value" active-text="Open" inactive-text="Close" />
+  <br />
+  <field-switch
+    v-model="value"
+    size="small"
+    active-text="Open"
+    inactive-text="Close"
+  />
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value = ref(true)
+</script>
+```
+### Text description
+
+You can add `active-text` and `inactive-text` attribute to show texts. use `inline-prompt` attribute to control text is displayed inside dot.
+
+You can add `active-text` and `inactive-text` attribute to show texts.
+
+<SwitchText />
+
+#### Viwer Source
+
+```vue
+<template>
+  <field-switch
+    v-model="value1"
+    class="mb-2"
+    active-text="Pay by month"
+    inactive-text="Pay by year"
+  />
+  <br />
+  <field-switch
+    v-model="value3"
+    class="mb-2"
+    style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
+    active-text="Pay by month"
+    inactive-text="Pay by year"
+  />
+  <br />
+  <field-switch
+    v-model="value4"
+    class="ml-2"
+    inline-prompt
+    style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
+    active-text="Y"
+    inactive-text="N"
+  />
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value1 = ref(true)
+const value2 = ref(true)
+const value3 = ref(true)
+</script>
+
+```
+
+
+### Display custom icons
+
+:::tip
+Use the `active-icon` and `inactive-icon` attribute to add icon. You can pass either string for the component name (registered in advance) or the component itself which is a SVG Vue component. Element Plus has provided a set of icon that you can find at [icon](https://element-plus.org/en-US/component/icon.html)
+:::
+
+<SwitchIcon />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-switch v-model="value1" :active-icon="Check" :inactive-icon="Close" />
+  <br />
+  <field-switch
+    v-model="value2"
+    class="mt-2"
+    style="margin-left: 24px"
+    inline-prompt
+    :active-icon="Check"
+    :inactive-icon="Close"
+  />
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Check, Close } from '@element-plus/icons-vue'
+const value1 = ref(true)
+const value2 = ref(true)
+</script>
+```
+### Disabled
+
+Adding the `disabled` attribute disables Switch.
+
+<SwitchDisabled />
+
+#### Viwer Source
+
+```vue
+<template>
+  <field-switch v-model="value1" disabled />
+  <br />
+  <field-switch v-model="value1" />
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Check, Close } from '@element-plus/icons-vue'
+const value1 = ref(true)
+const value2 = ref(true)
+</script>
+```
+
+### Loading
+
+Setting the `loading` attribute to `true` indicates a `loading` state on the Switch.
+
+<SwitchLoading />
+
+#### Viwer Source
+
+```vue
+<template>
+  <field-switch v-model="value1" loading />
+  <field-switch v-model="value2" loading class="ml-2" />
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value1 = ref(true)
+const value2 = ref(false)
+</script>
+
+```
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `value`  | binding value, it should be equivalent to either `active-value` or `inactive-value`, by default it's `boolean` type  | <el-tag effect="Light">  {{ 'boolean / string / number' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `active-text`    |  text displayed when in `on` state  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '——————' }} </el-tag> |
+  | `inactive-text`    |  text displayed when in `off` state  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '——————' }} </el-tag> |
+  | `inline-prompt`    |  whether icon or text is displayed inside dot, only the first character will be rendered for text  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'boolean' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  | `disabled`    |  whether Switch is `disabled`  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'boolean' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  | `loading`    |  whether Switch is in `loading` state  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'boolean' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  | `size`    |  size of Switch <el-tag effect=Light> large / default / small </el-tag>  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'default' }} </el-tag> |
+
+<!-- ### Slots
+
+|   Name    | Description |
+| :---------: | :-----------: |
+| `header` | Customize Default Content Top |
+| `content` | Customize Default Content |
+| `footer` | Customize Default Content Bottom |
+ -->
+
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-witch?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FieldSwitch                     # Field Switch specific components.
+```
+
+
+## DatePicker
+
+Use Date Picker for date input.
+
+::: tip
+  This component requires the `<client-only></client-only>` wrap when used in SSR (eg: [Nuxt](https://nuxt.com/v3)) and SSG (eg: [VitePress](https://vitepress.vuejs.org/)).
+:::
+
+### Enter Date
+
+Basic date picker measured by 'day'.
+
+The measurement is determined by the type attribute. You can enable quick options via shortcuts property. The disabled date is set by disabledDate, which is a function.
+
+<DatePikerBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="block">
+    <span class="demonstration">Picker with quick options</span>
+    <field-date-picker
+      v-model="value"
+      type="date"
+      placeholder="Pick a day"
+    />
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value = ref('')
+</script>
+
+<style scoped>
+.demo-date-picker {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.demo-date-picker .block {
+  padding: 30px 0;
+  text-align: center;
+  border-right: solid 1px var(--el-border-color);
+  flex: 1;
+}
+
+.demo-date-picker .block:last-child {
+  border-right: none;
+}
+
+.demo-date-picker .demonstration {
+  display: block;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+</style>
+```
+
+
+### Date Range
+
+Picking a date range is supported.
+
+When in range mode, the left and right panels are linked by default. If you want the two panels to switch current months independently, you can use the `unlink-panels` attribute.
+
+<DateRange />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="demo-date-picker">
+    <div class="block">
+      <span class="demonstration">Default</span>
+      <field-date-picker
+        v-model="value1"
+        type="daterange"
+        range-separator="To"
+        start-placeholder="Start date"
+        end-placeholder="End date"
+        :size="size"
+      />
+    </div>
+    <div class="block">
+      <span class="demonstration">With quick options</span>
+      <field-date-picker
+        v-model="value2"
+        type="daterange"
+        unlink-panels
+        range-separator="To"
+        start-placeholder="Start date"
+        end-placeholder="End date"
+        :shortcuts="shortcuts"
+        :size="size"
+      />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const size = ref<'default' | 'large' | 'small'>('default')
+
+const value1 = ref('')
+const value2 = ref('')
+
+const shortcuts = [
+  {
+    text: 'Last week',
+    value: () => {
+      const end = new Date()
+      const start = new Date()
+      start.setTime(start.getTime() - 3600 * 1000 * 24 * 7)
+      return [start, end]
+    },
+  },
+  {
+    text: 'Last month',
+    value: () => {
+      const end = new Date()
+      const start = new Date()
+      start.setTime(start.getTime() - 3600 * 1000 * 24 * 30)
+      return [start, end]
+    },
+  },
+  {
+    text: 'Last 3 months',
+    value: () => {
+      const end = new Date()
+      const start = new Date()
+      start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
+      return [start, end]
+    },
+  },
+]
+</script>
+
+<style scoped>
+.demo-date-picker {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.demo-date-picker .block {
+  padding: 30px 0;
+  text-align: center;
+  border-right: solid 1px var(--el-border-color);
+  flex: 1;
+}
+
+.demo-date-picker .block:last-child {
+  border-right: none;
+}
+
+.demo-date-picker .demonstration {
+  display: block;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+</style>
+
+```
+
+### Month Range
+
+Picking a month range is supported.
+
+When in range mode, the left and right panels are linked by default. If you want the two panels to switch current years independently, you can use the `unlink-panels` attribute.
+
+<MonthRange />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="demo-date-picker">
+    <div class="block">
+      <span class="demonstration">Default</span>
+      <field-date-picker
+        v-model="value1"
+        type="monthrange"
+        range-separator="To"
+        start-placeholder="Start month"
+        end-placeholder="End month"
+      />
+    </div>
+    <div class="block">
+      <span class="demonstration">With quick options</span>
+      <field-date-picker
+        v-model="value2"
+        type="monthrange"
+        unlink-panels
+        range-separator="To"
+        start-placeholder="Start month"
+        end-placeholder="End month"
+        :shortcuts="shortcuts"
+      />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value1 = ref('')
+const value2 = ref('')
+
+const shortcuts = [
+  {
+    text: 'This month',
+    value: [new Date(), new Date()],
+  },
+  {
+    text: 'This year',
+    value: () => {
+      const end = new Date()
+      const start = new Date(new Date().getFullYear(), 0)
+      return [start, end]
+    },
+  },
+  {
+    text: 'Last 6 months',
+    value: () => {
+      const end = new Date()
+      const start = new Date()
+      start.setMonth(start.getMonth() - 6)
+      return [start, end]
+    },
+  },
+]
+</script>
+<style scoped>
+.demo-date-picker {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.demo-date-picker .block {
+  padding: 30px 0;
+  text-align: center;
+  border-right: solid 1px var(--el-border-color);
+  flex: 1;
+}
+.demo-date-picker .block:last-child {
+  border-right: none;
+}
+.demo-date-picker .demonstration {
+  display: block;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+</style>
+
+```
+
+### Date Formats
+
+Use `format` to control displayed text's `format` in the input box. Use `value-format` to control binding value's format.
+
+By default, the component accepts and emits a `Date` object.
+
+Check the list here of all available formats of Day.js.
+
+:::warning
+  Pay attention to capitalization
+:::
+
+<DateFormats />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="demo-date-picker">
+    <div class="block">
+      <span class="demonstration">Emits Date object</span>
+      <div class="demonstration">Value: {{ value1 }}</div>
+      <field-date-picker
+        v-model="value1"
+        type="date"
+        placeholder="Pick a Date"
+        format="YYYY/MM/DD"
+      />
+    </div>
+    <div class="block">
+      <span class="demonstration">Use value-format</span>
+      <div class="demonstration">Value：{{ value2 }}</div>
+      <field-date-picker
+        v-model="value2"
+        type="date"
+        placeholder="Pick a Date"
+        format="YYYY/MM/DD"
+        value-format="YYYY-MM-DD"
+      />
+    </div>
+    <div class="block">
+      <span class="demonstration">Timestamp</span>
+      <div class="demonstration">Value：{{ value3 }}</div>
+      <field-date-picker
+        v-model="value3"
+        type="date"
+        placeholder="Pick a Date"
+        format="YYYY/MM/DD"
+        value-format="x"
+      />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const value1 = ref('')
+const value2 = ref('')
+const value3 = ref('')
+</script>
+<style scoped>
+.demo-date-picker {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.demo-date-picker .block {
+  padding: 30px 0;
+  text-align: center;
+  border-right: solid 1px var(--el-border-color);
+  flex: 1;
+}
+.demo-date-picker .block:last-child {
+  border-right: none;
+}
+.demo-date-picker .demonstration {
+  display: block;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+</style>
+
+```
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `type`  | type of the picker  | <el-tag effect="Light">  {{ 'string' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `value`    |  binding value, if it is an array, the length should be 2 | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'Date / number / string / Array' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '——————' }} </el-tag> |
+  | `format`    |  format of the displayed value in the input box  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'YYYY-MM-DD' }} </el-tag> |
+  | `shortcuts` |  an object array to set shortcut options  | <el-tag effect="Light"> {{ 'Array' }} </el-tag> | <el-tag effect="dark" round> {{ '——————' }} </el-tag> |
+  | `placeholder`    |  placeholder in non-range mode  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '——————' }} </el-tag> |
+  | `startPlaceholder`    |  placeholder in non-range mode  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '——————' }} </el-tag> |
+  | `endPlaceholder`    |  placeholder in non-range mode  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '——————' }} </el-tag> |
+  | `disabled`    |  whether Switch is `disabled`  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'boolean' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  | `clearable`    |  whether to show clear button  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'boolean' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  | `size`    |  size of Switch <el-tag effect=Light> {{ 'large / default / small' }} </el-tag>  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'default' }} </el-tag> |
+
+### Slots
+
+|   Name    | Description |
+| :---------: | :-----------: |
+| `header` | Customize Default Content Top |
+| `footer` | Customize Default Content Bottom |
+
+
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-date-picker?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FieldDatePicker               # Field DatePicker specific components.
 ```
 
 
