@@ -41,6 +41,25 @@ import NumberSteps from './Component/Atom/FieldNumber/NumberSteps.vue'
 import NumberStepsStrictly from './Component/Atom/FieldNumber/NumberStepsStrictly.vue'
 import NumberPrecision from './Component/Atom/FieldNumber/NumberPrecision.vue'
 import NumberControlsPosition from './Component/Atom/FieldNumber/NumberControlsPosition.vue'
+import NumberValueType from './Component/Atom/FieldNumber/NumberValueType.vue'
+// Field Image
+import ImageBasic from './Component/Atom/FieldImage/ImageBasic.vue'
+// Field Tags
+import TagsBasic from './Component/Atom/FieldTags/TagsBasic.vue'
+import TagsRounded from './Component/Atom/FieldTags/TagsRounded.vue'
+import TagsSizes from './Component/Atom/FieldTags/TagsSizes.vue'
+import TagsTheme from './Component/Atom/FieldTags/TagsTheme.vue'
+// Field Progress
+import ProgressBasic from './Component/Atom/FieldProgress/ProgressBasic.vue'
+import ProgressInternalPercentage from './Component/Atom/FieldProgress/ProgressInternalPercentage.vue'
+import ProgressType from './Component/Atom/FieldProgress/ProgressType.vue'
+// Field Silder
+import SliderBasic from './Component/Atom/FieldSlider/SliderBasic.vue'
+import SliderStep from './Component/Atom/FieldSlider/SliderStep.vue'
+import SliderRange from './Component/Atom/FieldSlider/SliderRange.vue'
+import SliderVertical from './Component/Atom/FieldSlider/SliderVertical.vue'
+// Field Avatar
+import AvatarBasic from './Component/Atom/FieldAvatar/AvatarBasic.vue'
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
@@ -85,6 +104,25 @@ export default defineClientConfig({
     app.component('NumberStepsStrictly', NumberStepsStrictly)
     app.component('NumberPrecision', NumberPrecision)
     app.component('NumberControlsPosition', NumberControlsPosition)
+    app.component('NumberValueType', NumberValueType)
+    // Field Image
+    app.component('ImageBasic', ImageBasic)
+    // Field Tags
+    app.component('TagsBasic', TagsBasic)
+    app.component('TagsRounded', TagsRounded)
+    app.component('TagsSizes', TagsSizes)
+    app.component('TagsTheme', TagsTheme)
+    // Field Progress
+    app.component('ProgressBasic', ProgressBasic)
+    app.component('ProgressInternalPercentage', ProgressInternalPercentage)
+    app.component('ProgressType', ProgressType)
+    // Field Silder
+    app.component('SliderBasic', SliderBasic)
+    app.component('SliderStep', SliderStep)
+    app.component('SliderRange', SliderRange)
+    app.component('SliderVertical', SliderVertical)
+    // Field Avatar
+    app.component('AvatarBasic', AvatarBasic)
   },
   setup() {},
   rootComponents: [],
