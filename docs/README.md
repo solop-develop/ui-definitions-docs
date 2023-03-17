@@ -726,15 +726,46 @@ The measurement is determined by the type attribute. You can enable quick option
       type="date"
       placeholder="Pick a day"
     />
+    <field-date-picker
+      v-model="value1"
+      type="date"
+      placeholder="Pick a day"
+      :shortcuts="shortcuts"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const value = ref('')
-</script>
+const size = ref<'default' | 'large' | 'small'>('default')
 
+const value1 = ref('')
+const value = ref('')
+
+const shortcuts = [
+  {
+    text: 'Today',
+    value: new Date(),
+  },
+  {
+    text: 'Yesterday',
+    value: () => {
+      const date = new Date()
+      date.setTime(date.getTime() - 3600 * 1000 * 24)
+      return date
+    },
+  },
+  {
+    text: 'A week ago',
+    value: () => {
+      const date = new Date()
+      date.setTime(date.getTime() - 3600 * 1000 * 24 * 7)
+      return date
+    },
+  },
+]
+</script>
 <style scoped>
 .demo-date-picker {
   display: flex;
@@ -1605,12 +1636,52 @@ const num = ref(1)
 </script>
 ```
 
+### Value Type
+<br>
+<br>
+
+<NumberValueType />
+
+#### Viwer Source
+
+```vue
+<template>
+  <p> {{ 'Value Type' }} <el-tag effect="Light">  {{ 'ID / INTEGER ' }} </el-tag> </p>
+  <FieldNumber
+    :num="num"
+    :controls="true"
+  />
+  <p> {{ 'Value Type' }} <el-tag effect="Light">  {{ 'NUMBER / QUANTITY ' }} </el-tag> </p>
+  <FieldNumber
+    :num="num2"
+    :valueType="'QUANTITY'"
+    :controls="true"
+    :precision="2"
+  />
+  <p> {{ 'Value Type' }} <el-tag effect="Light">  {{ 'AMOUNT / COSTS_PLUS_PRICES ' }} </el-tag> </p>
+  <FieldNumber
+    :num="num3"
+    :valueType="'COSTS_PLUS_PRICES'"
+    :controls="true"
+    :controlsPosition="'right'"
+    :slotsCurrency="'$'"
+  />
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const num = ref(1)
+</script>
+```
+
 
 ### Props
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `num`  | binding value  | <el-tag effect="Light">  {{ 'number' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+  |    `valueType`  | Type value <el-tag effect="Light">  {{ 'ID / INTEGER / NUMBER / QUANTITY / AMOUNT / COSTS_PLUS_PRICES' }} </el-tag>  | <el-tag effect="Light">  {{ 'string' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
 
 ### Attributes
 
@@ -1626,6 +1697,7 @@ const num = ref(1)
   | `disabled`    |  whether Switch is `disabled`  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'boolean' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'true' }} </el-tag> |
   | `size`    |  size of Switch <el-tag effect=Light> large / default / small </el-tag>  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'default' }} </el-tag> |
   | `placeholder`    |  placeholder the Select  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'Select' }} </el-tag> |
+  | `slotsCurrency`    |  The format or symbol of the currency to display  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ '$' }} </el-tag> |
 ### Slots
 
 |   Name    | Description |
@@ -1649,6 +1721,650 @@ const num = ref(1)
               └── Atoms                             # Atom components
                   └── FieldNumber                   # Field Number specific components.
 ```
+
+
+
+## Image
+
+Besides the native features of img, support lazy load, custom placeholder and load failure, etc.
+
+### Basic Usage
+
+Indicate how the image should be resized to `fit` its container by `fit`, same as native [object-fit.](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+
+
+<ImageBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="demo-image">
+    <div v-for="fit in fits" :key="fit" class="block">
+      <span class="demonstration">{{ fit }}</span>
+      <FieldImage style="width: 100px; height: 100px" :src="url" :fit="fit" />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
+const url =
+  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
+</script>
+
+<style scoped>
+.demo-image .block {
+  padding: 30px 0;
+  text-align: center;
+  border-right: solid 1px var(--el-border-color);
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.demo-image .block:last-child {
+  border-right: none;
+}
+.demo-image .demonstration {
+  display: block;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+</style>
+
+```
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `src`  | image source, same as native.  | <el-tag effect="Light">  {{ 'string' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `fit`    | indicate how the image should be resized to fit its container, same as [object-fit.](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) <el-tag effect="Light"> {{ 'fit / contain / cover / none / scale-down' }} </el-tag> | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ 'cover' }} </el-tag> |
+
+
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-image?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FielImage                     # Field Image specific components.
+```
+
+## Tags
+
+Used for marking and selection.
+
+### Basic Usage
+
+Use the `type` attribute to define Tag's type. In addition, the `color` attribute can be used to set the background color of the Tag.
+
+
+<TagsBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <FielTags :value="'Tags 1'" />
+  <FielTags :value="'Tags 2'" type="success" />
+  <FielTags :value="'Tags 3'" type="info" />
+  <FielTags :value="'Tags 4'" type="warning" />
+  <FielTags :value="'Tags 5'" type="danger" />
+</template>
+```
+
+### Sizes
+
+Besides default `size`, Tag component provides three additional sizes for you to choose among different scenarios.
+
+Use attribute `size` to set additional sizes with `large`, `default` or `small`.
+
+
+<TagsSizes />
+
+#### Viwer Source
+
+```vue
+<template>
+  <FielTags :value="'Default'" />
+  <FielTags :value="'large'" size="large"/>
+  <FielTags :value="'small'" size="small" />
+</template>
+```
+
+### Theme
+
+Tag provide three different themes: `dark`、`light` and `plain`
+
+Using `effect` to change, default is `light`
+
+
+<TagsTheme />
+
+#### Viwer Source
+
+```vue
+<template>
+  <FielTags
+    v-for="item in items"
+    :key="item.label"
+    :type="item.type"
+    class="mx-1"
+    effect="dark"
+    :value="item.label"
+  />
+  <FielTags
+    v-for="item in items"
+    :key="item.label"
+    :type="item.type"
+    class="mx-1"
+    effect="light"
+    :value="item.label"
+  />
+  <FielTags
+    v-for="item in items"
+    :key="item.label"
+    :type="item.type"
+    class="mx-1"
+    effect="plain"
+    :value="item.label"
+  />
+</template>
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+import type { TagProps } from 'element-plus'
+
+type Item = { type: TagProps['type']; label: string }
+
+const items = ref<Array<Item>>([
+  { type: '', label: 'Tag 1' },
+  { type: 'success', label: 'Tag 2' },
+  { type: 'info', label: 'Tag 3' },
+  { type: 'danger', label: 'Tag 4' },
+  { type: 'warning', label: 'Tag 5' },
+])
+</script>
+
+<style>
+.el-tag {
+  margin: 5px;
+}
+</style>
+```
+
+### Rounded
+
+Tag can also be rounded like button.
+
+
+<TagsRounded />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="flex flex-wrap gap-2 my-2">
+    <el-tag
+      v-for="item in items"
+      :key="item.label"
+      :type="item.type"
+      class="mx-1"
+      effect="dark"
+      round
+      :value="item.label"
+    />
+  </div>
+  <div class="flex flex-wrap gap-2">
+    <el-tag
+      v-for="item in items"
+      :key="item.label"
+      :type="item.type"
+      class="mx-1"
+      effect="light"
+      round
+      :value="item.label"
+    />
+  </div>
+  <div class="flex flex-wrap gap-2 my-2">
+    <el-tag
+      v-for="item in items"
+      :key="item.label"
+      :type="item.type"
+      class="mx-1"
+      effect="plain"
+      round
+      :value="item.label"
+    />
+  </div>
+</template>
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+import type { TagProps } from 'element-plus'
+
+type Item = { type: TagProps['type']; label: string }
+
+const items = ref<Array<Item>>([
+  { type: '', label: 'Tag 1' },
+  { type: 'success', label: 'Tag 2' },
+  { type: 'info', label: 'Tag 3' },
+  { type: 'danger', label: 'Tag 4' },
+  { type: 'warning', label: 'Tag 5' },
+])
+</script>
+
+```
+
+
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `value`  | Binding Value.  | <el-tag effect="Light">  {{ 'string' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `type`    | component type | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ '—————' }} </el-tag> |
+  | `effect`    | component theme <el-tag effect="Light">  {{ 'dark / light / plain' }} </el-tag>  | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ 'light' }} </el-tag> |
+  | `round`    | hether Tag is rounded | <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  | `size`    |  size of Switch <el-tag effect=Light> large / default / small </el-tag>  | <el-tag effect="Light"> <el-tag effect="Light">  {{ 'string' }} </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'default' }} </el-tag> |
+
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-tags?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FielTags                      # Field Tags specific components.
+```
+
+## Progress
+
+Progress is used to show the progress of current operation, and inform the user the current status.
+
+### Basic Usage
+
+<ProgressBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldProgress :percentage="50" :textInside="true" />
+  </el-card>
+</template>
+```
+
+### Internal percentage
+
+In this case the percentage takes no additional space
+<br>
+`stroke-width` attribute decides the `width` of progress bar, and use `text-inside` attribute to put description inside the progress bar.
+
+<ProgressInternalPercentage />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldProgress
+      :textInside="true"
+      :strokeWidth="22"
+      :percentage="80"
+    />
+    <FieldProgress
+      :textInside="true"
+      :strokeWidth="22"
+      :percentage="80"
+      status="success"
+    />
+    <FieldProgress
+      :textInside="true"
+      :strokeWidth="22"
+      :percentage="80"
+      status="warning"
+    />
+    <FieldProgress
+      :textInside="true"
+      :strokeWidth="22"
+      :percentage="80"
+      status="exception"
+    />
+  </el-card>
+</template>
+```
+
+### Circular progress bar
+
+You can specify `type` attribute to `circle` to use circular progress bar, and use `width` attribute to change the size of circle.
+
+<ProgressType />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldProgress
+      type="circle"
+      :percentage="0"
+      :textInside="true"
+    />
+    <FieldProgress
+      type="circle"
+      :percentage="25"
+      :textInside="true"
+    />
+    <FieldProgress
+      type="circle"
+      :percentage="25"
+      status="success"
+      :textInside="true"
+    />
+    <FieldProgress
+     type="circle"
+      :percentage="25"
+      status="warning"
+      :textInside="true"
+    />
+    <FieldProgress
+     type="circle"
+      :percentage="25"
+      :textInside="true"
+      status="exception"
+    />
+  </el-card>
+</template>
+```
+
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `percentage`  | percentage.  | <el-tag effect="Light">  {{ 'number' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+  |    `textInside`  | whether to place the percentage inside progress bar, only works when `type` is 'line'.  | <el-tag effect="Light">  {{ 'boolean' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `type`    | the `type` of progress bar <el-tag effect="Light"> {{ 'line/circle/dashboard' }} </el-tag> | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ 'line' }} </el-tag> |
+  | `strokeWidth`    | the width of progress bar  | <el-tag effect="Light">  {{ 'number' }} </el-tag> | <el-tag effect="dark" round > {{ '6' }} </el-tag> |
+  | `status`    | the current status of progress bar <el-tag effect="Light"> {{ 'success/exception/warning' }} </el-tag>  | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ '────' }} </el-tag> |
+  | `indeterminate`    | set indeterminate progress  | <el-tag effect="Light">  {{ 'boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-progress?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FieldProgress                 # Field Progress specific components.
+```
+
+## Avance
+
+Drag the slider within a fixed range.
+
+### Basic usage
+
+The current value is displayed when the slider is being dragged.
+
+Customize the initial value of the slider by setting the binding value.
+
+<SliderBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldSlider
+      v-model="0"
+    />
+    <FieldSlider
+      v-model="0"
+      :show-tooltip="false"
+    />
+    <FieldSlider
+      v-model="0"
+      :disabled="true"
+    />
+  </el-card>
+</template>
+```
+
+### Step
+
+Set `step` size with the `step` attribute. You can display breakpoints by setting the `show-stops` attribute
+
+<SliderStep />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldSlider
+      v-model="0"
+      :step="10"
+    />
+    <FieldSlider
+      v-model="0"
+      :step="10"
+      :show-stops="true"
+    />
+  </el-card>
+</template>
+```
+
+### Range
+
+Selecting a range of values is supported.
+
+Setting the `range` attribute activates range mode, where the binding value is an array made up of two boundary values.
+
+<SliderRange />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldSlider
+      v-model="0"
+      :show-stops="true"
+      :range="true"
+      :max="10"
+    />
+  </el-card>
+</template>
+```
+
+### Vertical Mode
+
+Setting the vertical `attribute` to `true` enables vertical mode. In vertical mode, the `height` attribute is required.
+
+<SliderVertical />
+
+#### Viwer Source
+
+```vue
+<template>
+  <el-card class="box-card">
+    <FieldSlider
+      v-model="0"
+      :vertical="true"
+    />
+  </el-card>
+</template>
+```
+
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `percentage`  | percentage.  | <el-tag effect="Light">  {{ 'number' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+  |    `textInside`  | whether to place the percentage inside progress bar, only works when `type` is 'line'.  | <el-tag effect="Light">  {{ 'boolean' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `type`    | the `type` of progress bar <el-tag effect="Light"> {{ 'line/circle/dashboard' }} </el-tag> | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ 'line' }} </el-tag> |
+  | `strokeWidth`    | the width of progress bar  | <el-tag effect="Light">  {{ 'number' }} </el-tag> | <el-tag effect="dark" round > {{ '6' }} </el-tag> |
+  | `status`    | the current status of progress bar <el-tag effect="Light"> {{ 'success/exception/warning' }} </el-tag>  | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ '────' }} </el-tag> |
+  | `indeterminate`    | set indeterminate progress  | <el-tag effect="Light">  {{ 'boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+  |  `disabled` | Disable the Button | <el-tag effect="Light">  {{ 'Boolean' }} </el-tag> | <el-tag effect="dark" round > {{ 'False' }} </el-tag> |
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-silder?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FieldSilder                 # Field silder specific components.
+```
+
+
+## Avatar
+
+Besides the native features of img, support lazy load, custom placeholder and load failure, etc.
+
+### Basic Usage
+
+Indicate how the image should be resized to `fit` its container by `fit`, same as native [object-fit.](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+
+
+<AvatarBasic />
+
+#### Viwer Source
+
+```vue
+<template>
+  <div class="demo-image">
+    <div v-for="fit in fits" :key="fit" class="block">
+      <span class="demonstration">{{ fit }}</span>
+      <FieldImage shape="shape" :size="100" :src="url" :fit="fit" />
+      <br>
+      <el-divider />
+      <br>
+      <FieldImage shape="circle" :size="100" :src="url" :fit="fit" />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+const fits = ['fill', 'contain', 'cover', 'none', 'scale-down']
+const url =
+  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
+</script>
+
+<style scoped>
+.demo-image .block {
+  padding: 30px 0;
+  text-align: center;
+  border-right: solid 1px var(--el-border-color);
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.demo-image .block:last-child {
+  border-right: none;
+}
+.demo-image .demonstration {
+  display: block;
+  color: var(--el-text-color-secondary);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+</style>
+
+```
+
+### Props
+
+  |   Name    | Description | Type  | Mandatory |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  |    `src`  | the source of the image for an image avatar.  | <el-tag effect="Light">  {{ 'string' }} </el-tag>  |  <el-tag effect="dark" round > {{ 'True' }} </el-tag> |
+
+
+### Attributes
+
+  |   Name    | Description | Type   | Default |
+  | :---------: | :-----------: | :-----------------: | :-----------: |
+  | `fit`    | set how the image fit its container for an image avatar <el-tag effect="Light"> {{ 'fit / contain / cover / none / scale-down' }} </el-tag> | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ 'cover' }} </el-tag> |
+  | `size`    | avatar size <el-tag effect="Light">  {{ 'large' }} <el-divider direction="vertical" /> {{ 'default' }}  <el-divider direction="vertical" /> {{ 'small' }}  </el-tag> | <el-tag effect="Light" round > {{ 'String' }} <el-divider direction="vertical" /> {{ 'Number' }} </el-tag>  | <el-tag effect="dark" round > {{ 'default' }} </el-tag> |
+  | `shape`    | avatar shape <el-tag effect="Light"> {{ ' circle / shape' }} </el-tag> | <el-tag effect="Light">  {{ 'string' }} </el-tag> | <el-tag effect="dark" round > {{ 'cover' }} </el-tag> |
+
+
+### Example for Developer
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-avatar?file=app.vue)
+
+
+### Directory
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FielAvatar                    # Field Avatar specific components.
+```
+
+
+
+
 
 </span>
 

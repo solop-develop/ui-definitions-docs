@@ -21,7 +21,6 @@
           v-model="value2"
           type="date"
           placeholder="Pick a day"
-          :disabled-date="disabledDate"
           :shortcuts="shortcuts"
           :size="size"
         />
