@@ -2,7 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 # This file was contributed by Elsio Sanchez, Edwin Betancourt
 
-name: Deploy Documentation on Github Pages
+name: Documentation.
 
 # Controls when the action will run.
 on:
@@ -38,26 +38,34 @@ jobs:
       - name: Node configuration
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18
           cache: 'yarn'
-
-      - name: Install Deps
-        run: yarn install --frozen-lockfile
 
       - name: Enable https to install packages
         run: git config --global url."https://".insteadOf git://
 
-      - name: Install packages
-        run:  yarn ci
+      - name: Install Deps
+        run: yarn install --frozen-lockfile
+
+      # - name: Install packages
+      #   run:  yarn ci
 
       # - name: Generate static vuepress files
       #   run: yarn docs:build
       - name: Build Docs
         env:
-          NODE_OPTIONS: --max_old_space_size=8192
+          NODE_OPTIONS: --max_old_space_size=9192
         run: |-
           yarn run docs:build
           > my-docs/src/.vuepress/dist
+
+    - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: my-docs/src/.vuepress/dist
+          # folder: docs/.vuepress/dist
 
       # - name: Upload dist docs
       #   uses: actions/upload-artifact@v3
@@ -75,12 +83,12 @@ jobs:
       #     git add -A
       #     git commit -m "docs: ${{ github.event.head_commit.message }}" -a || true
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: my-docs/src/.vuepress/dist
+      # - name: Deploy
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: gh-pages
+      #     folder: my-docs/src/.vuepress/dist
           # folder: docs/.vuepress/dist
 
       # - name: Force push to destination branch
