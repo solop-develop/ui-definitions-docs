@@ -57,14 +57,14 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=9192
         run: |-
           yarn run docs:build
-          > my-docs/src/.vuepress/dist
+          > src/.vuepress/dist
 
     - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: my-docs/src/.vuepress/dist
+          folder: src/.vuepress/dist
           # folder: docs/.vuepress/dist
 
       # - name: Upload dist docs
