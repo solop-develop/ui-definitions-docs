@@ -59,6 +59,9 @@ jobs:
           yarn run docs:build
           > src/.vuepress/dist
 
+    - name: Epale
+      run: ls
+
     - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
