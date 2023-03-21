@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://vuepress-theme-hope-docs-demo.netlify.app/atom.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
-  <id>https://vuepress-theme-hope-docs-demo.netlify.app/</id>
+  <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/</id>
   <title>UI Definitions Docs</title>
   <subtitle>A user interface definition documentation based on components, compositions, and pattern layouts.</subtitle>
   <author>
     <name>Elsio Sanchez</name>
     <uri>https://github.com/elsiosanchez</uri>
   </author>
-  <logo>https://vuepress-theme-hope-docs-demo.netlify.app/logo.svg</logo>
+  <logo>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/logo.svg</logo>
   <rights>Copyright by Elsio Sanchez</rights>
-  <updated>2023-03-21T21:04:24.722Z</updated>
+  <updated>2023-03-21T21:15:52.949Z</updated>
   <generator>vuepress-plugin-feed2</generator>
-  <link rel="self" href="https://vuepress-theme-hope-docs-demo.netlify.app/atom.xml"/>
-  <link rel="alternate" href="https://vuepress-theme-hope-docs-demo.netlify.app/"/>
+  <link rel="self" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/atom.xml"/>
+  <link rel="alternate" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/"/>
   <category term="Docs"/>
   <category term="Component"/>
   <category term="Atom"/>
@@ -23,8 +23,8 @@
   </contributor>
   <entry>
     <title type="text">Slide page</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/slides.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/slides.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/slides.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/slides.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<!-- markdownlint-disable MD024 MD033 MD051 -->
 ]]></summary>
@@ -43,8 +43,8 @@
   </entry>
   <entry>
     <title type="text">Componentes</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<h2> Component Documentation</h2>
 <p>The Components are separated into </p>
@@ -60,8 +60,8 @@
 
 :::: -->
 <h2> Atoms</h2>
-<h3> <strong><a href="/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
-<h3> <strong><a href="/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>]]></summary>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>]]></summary>
     <content type="html"><![CDATA[<h2> Component Documentation</h2>
 <p>The Components are separated into </p>
 <!-- :::: details Code
@@ -76,17 +76,17 @@
 
 :::: -->
 <h2> Atoms</h2>
-<h3> <strong><a href="/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
-<h3> <strong><a href="/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>
-<h3> <strong><a href="/docs/Component/Atoms/FieldDatePiker/" target="blank">FieldDatePiker</a></strong></h3>
-<h3> <strong><a href="/docs/Component/Atoms/FieldImage/" target="blank">FieldImage</a></strong></h3>
-<h3> <strong><a href="/docs/Component/Atoms/FieldNumber/" target="blank">FieldNumber</a></strong></h3>
-<h3> <a href="/docs/Component/Atoms/FieldProgress/" target="blank">FieldProgress</a></h3>
-<h3> <a href="/docs/Component/Atoms/FieldSelect/" target="blank">FieldSelect</a></h3>
-<h3> <a href="/docs/Component/Atoms/FieldSlider/" target="blank">FieldSlider</a></h3>
-<h3> <a href="/docs/Component/Atoms/FieldSwitch/" target="blank">FieldSwitch</a></h3>
-<h3> <a href="/docs/Component/Atoms/FieldTags/" target="blank">FieldTags</a></h3>
-<h3> <a href="/docs/Component/Atoms/FieldText/" target="blank">FieldText</a></h3>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/" target="blank">FieldDatePiker</a></strong></h3>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldImage/" target="blank">FieldImage</a></strong></h3>
+<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldNumber/" target="blank">FieldNumber</a></strong></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldProgress/" target="blank">FieldProgress</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSelect/" target="blank">FieldSelect</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSlider/" target="blank">FieldSlider</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/" target="blank">FieldSwitch</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldTags/" target="blank">FieldTags</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldText/" target="blank">FieldText</a></h3>
 <h2> molecula</h2>
 <!-- ### [paginacion](molecula/paginacion.md) -->
 ]]></content>
@@ -104,8 +104,8 @@
   </entry>
   <entry>
     <title type="text">Avatar</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldAvatar.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldAvatar.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldAvatar.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldAvatar.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 Besides the native features of img, support lazy load, custom placeholder and load failure, etc.
@@ -133,8 +133,8 @@ Besides the native features of img, support lazy load, custom placeholder and lo
   </entry>
   <entry>
     <title type="text">Button</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldButtom.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldButtom.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldButtom.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldButtom.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 Commonly used button.
@@ -226,8 +226,8 @@ Commonly used button.
   </entry>
   <entry>
     <title type="text">Date Picker</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldDatePiker.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldDatePiker.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 Use `format` to control displayed text's `format` in the input box. Use `value-format` to control binding value's format.
@@ -263,8 +263,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Image</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldImage.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldImage.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldImage.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldImage.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Besides the native features of img, support lazy load, custom placeholder and load failure, etc.</p>
@@ -292,8 +292,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Number</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldNumber.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldNumber.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldNumber.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldNumber.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Input numerical values with a customizable range.</p>
@@ -329,8 +329,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Progress</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldProgress.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldProgress.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldProgress.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldProgress.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Progress is used to show the progress of current operation, and inform the user the current status.</p>
@@ -357,8 +357,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Select</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldSelect.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldSelect.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSelect.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSelect.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>When there are plenty of options, use a drop-down menu to display and select desired ones.</p>
@@ -394,8 +394,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Avance</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldSlider.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldSlider.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSlider.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSlider.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Drag the slider within a fixed range.</p>
@@ -426,8 +426,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Switch</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldSwitch.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldSwitch.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSwitch.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSwitch.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Switch is used for switching between two opposing states.</p>
@@ -455,8 +455,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Tags</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldTags.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldTags.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldTags.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldTags.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Used for marking and selection.</p>
@@ -485,8 +485,8 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
   </entry>
   <entry>
     <title type="text">Text</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldText.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Atoms/FieldText.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldText.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldText.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 Input data using mouse or keyboard..
@@ -515,8 +515,8 @@ Input data using mouse or keyboard..
   </entry>
   <entry>
     <title type="text">Action Panel</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Molecula/ActionPanel.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/Component/Molecula/ActionPanel.html"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
@@ -550,13 +550,13 @@ Input data using mouse or keyboard..
   </entry>
   <entry>
     <title type="text">UI Definitions Docs</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/docs/</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/docs/"/>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/"/>
     <updated>2023-03-21T20:48:34.000Z</updated>
     <summary type="html"><![CDATA[<p>A user interface definition documentation based on components, compositions, and pattern layouts.</p>
 <h2> Install</h2>
 <h2> Components</h2>
-<h3> <a href="/docs/Component/Atoms/" target="blank">Atoms</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/" target="blank">Atoms</a></h3>
 <h3> Molecules</h3>
 <h3> Organisms</h3>
 <!-- ### [Molecules](Component/README.md)
@@ -564,7 +564,7 @@ Input data using mouse or keyboard..
     <content type="html"><![CDATA[<p>A user interface definition documentation based on components, compositions, and pattern layouts.</p>
 <h2> Install</h2>
 <h2> Components</h2>
-<h3> <a href="/docs/Component/Atoms/" target="blank">Atoms</a></h3>
+<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/" target="blank">Atoms</a></h3>
 <h3> Molecules</h3>
 <h3> Organisms</h3>
 <!-- ### [Molecules](Component/README.md)
