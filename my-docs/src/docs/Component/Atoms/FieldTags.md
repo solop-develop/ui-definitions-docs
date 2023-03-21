@@ -24,6 +24,10 @@ Use the `type` attribute to define Tag's type. In addition, the `color` attribut
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <FielTags :value="'Tags 1'" />
@@ -33,6 +37,9 @@ Use the `type` attribute to define Tag's type. In addition, the `color` attribut
   <FielTags :value="'Tags 5'" type="danger" />
 </template>
 ```
+:::
+````
+::::
 
 ### Sizes
 
@@ -45,6 +52,10 @@ Use attribute `size` to set additional sizes with `large`, `default` or `small`.
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <FielTags :value="'Default'" />
@@ -52,6 +63,9 @@ Use attribute `size` to set additional sizes with `large`, `default` or `small`.
   <FielTags :value="'small'" size="small" />
 </template>
 ```
+:::
+````
+::::
 
 ### Theme
 
@@ -64,6 +78,9 @@ Using `effect` to change, default is `light`
 
 #### Viwer Source
 
+:::: details Code
+
+````md
 ```vue
 <template>
   <FielTags
@@ -113,7 +130,9 @@ const items = ref<Array<Item>>([
 }
 </style>
 ```
-
+:::
+````
+::::
 ### Rounded
 
 Tag can also be rounded like button.
@@ -122,7 +141,9 @@ Tag can also be rounded like button.
 <TagsRounded />
 
 #### Viwer Source
+:::: details Code
 
+````md
 ```vue
 <template>
   <div class="flex flex-wrap gap-2 my-2">
@@ -176,7 +197,9 @@ const items = ref<Array<Item>>([
 </script>
 
 ```
-
+:::
+````
+::::
 
 
 ### Props

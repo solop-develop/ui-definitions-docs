@@ -62,6 +62,14 @@ import SliderVertical from './Component/Atom/FieldSlider/SliderVertical.vue';
 // Field Avatar
 import AvatarBasic from './Component/Atom/FieldAvatar/AvatarBasic.vue';
 
+/**
+ * Moleculas
+ */
+// Action Panel
+import ActionPanelClear from './Component/Molecula/ActionPanelClear.vue';
+import ActionPanelClose from './Component/Molecula/ActionPanelClose.vue';
+import ActionPanelCheck from './Component/Molecula/ActionPanelCheck.vue';
+import ActionPanelSlots from './Component/Molecula/ActionPanelSlots.vue';
 
 export default defineClientConfig({
   enhance: ({ app, router, siteData }) => {
@@ -125,5 +133,10 @@ export default defineClientConfig({
     app.component('SliderVertical', SliderVertical)
     // Field Avatar
     app.component('AvatarBasic', AvatarBasic)
+    // Action Panel
+    app.component('ActionPanelClear', ActionPanelClear)
+    app.component('ActionPanelClose', ActionPanelClose)
+    app.component('ActionPanelCheck', ActionPanelCheck)
+    app.component('ActionPanelSlots', ActionPanelSlots)
   },
 });

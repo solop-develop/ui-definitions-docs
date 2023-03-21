@@ -23,6 +23,10 @@ Bind `v-model` to a `Boolean` typed variable. The `--el-switch-on-color` and `--
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <field-switch v-model="value1" />
@@ -42,11 +46,19 @@ const value2 = ref(true)
 
 ```
 
+:::
+````
+::::
+
 ### Sizes
 
 <SwitchSizes />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -73,6 +85,10 @@ import { ref } from 'vue'
 const value = ref(true)
 </script>
 ```
+
+:::
+````
+::::
 ### Text description
 
 You can add `active-text` and `inactive-text` attribute to show texts. use `inline-prompt` attribute to control text is displayed inside dot.
@@ -82,6 +98,10 @@ You can add `active-text` and `inactive-text` attribute to show texts.
 <SwitchText />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -120,6 +140,10 @@ const value3 = ref(true)
 
 ```
 
+:::
+````
+::::
+
 
 ### Display custom icons
 
@@ -130,6 +154,10 @@ Use the `active-icon` and `inactive-icon` attribute to add icon. You can pass ei
 <SwitchIcon />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -152,6 +180,10 @@ const value1 = ref(true)
 const value2 = ref(true)
 </script>
 ```
+
+:::
+````
+::::
 ### Disabled
 
 Adding the `disabled` attribute disables Switch.
@@ -159,6 +191,10 @@ Adding the `disabled` attribute disables Switch.
 <SwitchDisabled />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -175,6 +211,9 @@ const value2 = ref(true)
 </script>
 ```
 
+:::
+````
+::::
 ### Loading
 
 Setting the `loading` attribute to `true` indicates a `loading` state on the Switch.
@@ -182,6 +221,9 @@ Setting the `loading` attribute to `true` indicates a `loading` state on the Swi
 <SwitchLoading />
 
 #### Viwer Source
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -198,6 +240,9 @@ const value2 = ref(false)
 
 ```
 
+:::
+````
+::::
 ### Props
 
   |   Name    | Description | Type  | Mandatory |

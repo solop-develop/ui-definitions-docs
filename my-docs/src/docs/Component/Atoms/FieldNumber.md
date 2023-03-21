@@ -28,6 +28,10 @@ Bind a variable to `v-model` in `<el-input-number>` element and you are set.
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <FieldNumber :num="num" :min="1" :max="10" />
@@ -41,6 +45,10 @@ const num = ref(1)
 
 ```
 
+:::
+````
+::::
+
 ### Disabled
 
 The `disabled` attribute accepts a `boolean`, and if the value is `true`, the component is disabled. If you just need to control the value within a range, you can add min attribute to set the minimum value and `max` to set the maximum value. By default, the minimum value is `0`.
@@ -48,6 +56,10 @@ The `disabled` attribute accepts a `boolean`, and if the value is `true`, the co
 <NumberDisabled />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -61,6 +73,11 @@ const num = ref(1)
 </script>
 ```
 
+:::
+````
+
+::::
+
 ### Steps
 
 Allows you to define incremental steps.
@@ -70,6 +87,10 @@ Add `step` attribute to set the step.
 <NumberSteps />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -83,6 +104,11 @@ const num = ref(1)
 </script>
 ```
 
+:::
+````
+
+::::
+
 ### Step strictly
 
 The `step-strictly` attribute accepts a `boolean`. if this attribute is `true`, input value can only be multiple of step.
@@ -90,6 +116,10 @@ The `step-strictly` attribute accepts a `boolean`. if this attribute is `true`, 
 <NumberStepsStrictly />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -103,6 +133,11 @@ const num = ref(1)
 </script>
 ```
 
+:::
+````
+
+::::
+
 ### Precision
 
 Add `precision` attribute to set the precision of input value.
@@ -114,6 +149,10 @@ Add `precision` attribute to set the precision of input value.
 <NumberPrecision />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -127,6 +166,12 @@ const num = ref(1)
 </script>
 ```
 
+:::
+````
+
+::::
+
+
 ### Controls Position
 
 Set `controls-position` to decide the position of control buttons.
@@ -134,6 +179,10 @@ Set `controls-position` to decide the position of control buttons.
 <NumberControlsPosition />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -147,6 +196,11 @@ const num = ref(1)
 </script>
 ```
 
+:::
+````
+
+::::
+
 ### Value Type
 <br>
 <br>
@@ -154,6 +208,10 @@ const num = ref(1)
 <NumberValueType />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -185,6 +243,11 @@ import { ref } from 'vue'
 const num = ref(1)
 </script>
 ```
+
+:::
+````
+
+::::
 
 
 ### Props

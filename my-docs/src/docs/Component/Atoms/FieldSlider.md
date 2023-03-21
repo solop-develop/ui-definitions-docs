@@ -25,6 +25,10 @@ Customize the initial value of the slider by setting the binding value.
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <el-card class="box-card">
@@ -43,6 +47,11 @@ Customize the initial value of the slider by setting the binding value.
 </template>
 ```
 
+:::
+````
+
+::::
+
 ### Step
 
 Set `step` size with the `step` attribute. You can display breakpoints by setting the `show-stops` attribute
@@ -50,6 +59,10 @@ Set `step` size with the `step` attribute. You can display breakpoints by settin
 <SliderStep />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -66,6 +79,10 @@ Set `step` size with the `step` attribute. You can display breakpoints by settin
   </el-card>
 </template>
 ```
+:::
+````
+
+::::
 
 ### Range
 
@@ -76,6 +93,10 @@ Setting the `range` attribute activates range mode, where the binding value is a
 <SliderRange />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -89,6 +110,10 @@ Setting the `range` attribute activates range mode, where the binding value is a
   </el-card>
 </template>
 ```
+:::
+````
+
+::::
 
 ### Vertical Mode
 
@@ -97,6 +122,10 @@ Setting the vertical `attribute` to `true` enables vertical mode. In vertical mo
 <SliderVertical />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -108,7 +137,10 @@ Setting the vertical `attribute` to `true` enables vertical mode. In vertical mo
   </el-card>
 </template>
 ```
+:::
+````
 
+::::
 
 ### Props
 

@@ -26,6 +26,10 @@ Check the list here of all available formats of Day.js.
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <div class="demo-date-picker">
@@ -96,6 +100,11 @@ const value3 = ref('')
 </style>
 
 ```
+
+:::
+````
+
+::::
 
 ### Props
 
