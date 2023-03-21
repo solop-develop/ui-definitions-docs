@@ -1,24 +1,31 @@
 ---
 home: true
-layout: Blog
 icon: home
-title: Home
-bgImage: /background.png
-heroFullScreen: true
-projects:
-  - name: ZK UI
-    desc: Ajax (UI) for ADempiere
-    link: http://localhost:8888/webui/
+title: Inicio
+heroImage: /logo.svg
+heroText: UI Definitions Docs
+tagline: A user interface definition documentation based on components, compositions, and pattern layouts.
+actions:
+  - text: Componentes
+    link: /docs/Component/
+
+features:
+  - title: ZK UI
     icon: /assets/icon/logo.png
-
-  - name: New UI for ADempiere
-    desc: Completely created on Javascript with Vue
-    link: http://localhost:9526
+    details: Ajax (UI) for ADempiere
+  - title: New UI for ADempiere
     icon: /assets/img/vue-logo.png
-  # - name: Discord Rooms
-  #   desc: Hey we are on Discord!
-  #   link: https://discord.gg/8eFAqkhb
-  #   icon: /assets/img/discord-logo.png
+    details: Completely created on Javascript with Vue
+    # link: https://theme-hope.vuejs.press/zh/guide/markdown/
+  - title: Adempiere-vue
+    icon: /assets/icon/logo.png
+    details: The new UI for ADempiere ERP
+    link: https://adempiere.github.io/adempiere-vue/
+  - title: ADempiere Proxy API
+    icon: /assets/icon/logo.png
+    details: CoA documentation for Proxy of ADempiere Frontend
+    link: https://adempiere.github.io/proxy-adempiere-api/
 
-footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target="_blank">ADempiere Community</a> | <a href="/about/site">About Site</a>'
+copyright: false
+footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target="_blank">ADempiere Community</a> | <a href="https://www.adempiere.io/about/site">About Site</a>'
 ---
