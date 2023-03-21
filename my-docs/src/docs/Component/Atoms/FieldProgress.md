@@ -22,6 +22,10 @@ Progress is used to show the progress of current operation, and inform the user 
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <el-card class="box-card">
@@ -29,6 +33,11 @@ Progress is used to show the progress of current operation, and inform the user 
   </el-card>
 </template>
 ```
+
+:::
+````
+
+::::
 
 ### Internal percentage
 
@@ -39,6 +48,10 @@ In this case the percentage takes no additional space
 <ProgressInternalPercentage />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -70,6 +83,11 @@ In this case the percentage takes no additional space
 </template>
 ```
 
+:::
+````
+
+::::
+
 ### Circular progress bar
 
 You can specify `type` attribute to `circle` to use circular progress bar, and use `width` attribute to change the size of circle.
@@ -77,6 +95,10 @@ You can specify `type` attribute to `circle` to use circular progress bar, and u
 <ProgressType />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -113,6 +135,10 @@ You can specify `type` attribute to `circle` to use circular progress bar, and u
 </template>
 ```
 
+:::
+````
+
+::::
 
 ### Props
 

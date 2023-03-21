@@ -47,6 +47,9 @@ jobs:
       - name: Compile dist
         run: yarn docs:build
 
+      - name: epale
+        run: ls
+
       - name: test
         run: echo "$BASE_REPOSITORY"
 

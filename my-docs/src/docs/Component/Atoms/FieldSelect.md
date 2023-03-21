@@ -28,6 +28,10 @@ When there are plenty of options, use a drop-down menu to display and select des
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <FieldSelect :value="value" :optionList="options" size="small" />
@@ -69,6 +73,11 @@ const options = [
 </script>
 
 ```
+
+:::
+````
+
+::::
 
 ### Disabled Option
 
@@ -78,6 +87,10 @@ Set the value of `disabled` in `el-option` to `true` to `disable` this option.
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <FieldSelect :value="value" :optionList="options" size="small" />
@@ -119,6 +132,11 @@ const options = [
 </script>
 
 ```
+
+:::
+````
+
+::::
 
 ### Disabled Select
 
@@ -130,6 +148,10 @@ Set `disabled` of `el-select` to make it `disabled`.
 <SelectDisable />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -171,6 +193,11 @@ const options = [
 
 ```
 
+:::
+````
+
+::::
+
 
 ### Clearable Single Select
 
@@ -181,6 +208,10 @@ Set `clearable` attribute for `el-select` and a clear icon will appear. Note tha
 
 
 <SelectClearable />
+
+:::: details Code
+
+````md
 
 #### Viwer Source
 
@@ -224,6 +255,11 @@ const options = [
 
 ```
 
+:::
+````
+
+::::
+
 ### Basic Multiple Select
 
 Multiple select uses tags to display selected options.
@@ -234,6 +270,10 @@ Set `multiple` attribute for `el-select` to enable multiple mode. In this case, 
 <SelectMultipleSelect />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -285,6 +325,11 @@ const options = [
 
 ```
 
+:::
+````
+
+::::
+
 ### Option filtering
 
 You can filter options for your desired ones.
@@ -295,6 +340,10 @@ Adding `filterable` to `el-select` enables filtering. By default, Select will fi
 <SelectFilter />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -335,6 +384,10 @@ const options = [
 </script>
 ```
 
+:::
+````
+
+::::
 
 ### Props
 

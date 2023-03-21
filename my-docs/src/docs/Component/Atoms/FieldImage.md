@@ -26,6 +26,10 @@ Indicate how the image should be resized to `fit` its container by `fit`, same a
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
 <template>
   <div class="demo-image">
@@ -64,6 +68,10 @@ const url =
 </style>
 
 ```
+:::
+````
+
+::::
 
 ### Props
 

@@ -1,0 +1,93 @@
+version: "3.9"
+
+networks:
+  adempiere-ui:
+
+volumes:
+  pgdata:
+
+
+services:
+  adempiere.db:
+    image: solopcloud/adempiere-postgres:14-alpine-experimental-1.0.4
+    ports:
+      - "5432:5432"
+    volumes:
+      - "pgdata:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_PASSWORD=adempiere
+      - DB_NAME=adempiere
+      - ADEMPIERE_PASSWORD=adempiere
+    networks:
+      - adempiere-ui
+
+
+  adempiere.backend:
+    image: solopcloud/adempiere-backend:alpine
+    # container_name: adempiere-backend
+    depends_on:
+      - adempiere.db
+    ports:
+      - "50059:50059"
+    environment:
+      - SERVICES_ENABLED=access; business; business_partner; core; dashboarding; dictionary; enrollment; file_management; general_ledger; in_out; invoice; issue_management; log; material_management; order; payment; payment_print_export; payroll_action_notice; pos; product; store; time_control; ui; user_customization; workflow;
+      - DB_HOST=adempiere.db
+      - TZ="America/Caracas"
+    networks:
+      - adempiere-ui
+
+
+  adempiere.redis:
+    image: redis:4-alpine
+    ports:
+      - '6379:6379'
+    networks:
+      - adempiere-ui
+
+
+  adempiere.proxy:
+    image: solopcloud/adempiere-proxy:alpine
+    # container_name: adempiere-proxy
+    depends_on:
+      - adempiere.redis
+      - adempiere.backend
+    ports:
+      - 8085:8085
+    environment:
+      - SERVER_PORT=8085
+      - AD_DEFAULT_HOST=adempiere.backend
+      - AD_DEFAULT_PORT=50059
+      - INDEX=vue_storefront_catalog
+      - RESTORE_DB=N
+      - REDIS_HOST=adempiere.redis
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+      - TZ="America/Caracas"
+    networks:
+      - adempiere-ui
+
+
+  adempiere.vue:
+    image: solopcloud/adempiere-vue:alpine
+    # container_name: adempiere-frontend
+    depends_on:
+      - backend
+      - adempiere.proxy
+    ports:
+      - 9526:80
+    environment:
+      # Set the ip or dns of the server (not the dns of the container) to access from other client hosts
+      - API_URL=http://localhost:8085
+      - TZ="America/Caracas"
+    networks:
+      - adempiere-ui
+
+
+  adempiere.site:
+    # container_name: adempiere-site
+    image: edwinbetanc0urt/adempiere-site:alpine
+    ports:
+      - 80:80
+    environment:
+      - VUE_HOST=http://localhost:9526
+      - ZK_HOST=http://localhost:8888

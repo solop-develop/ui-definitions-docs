@@ -21,6 +21,10 @@ Basic usage
 
 #### Viwer Source
 
+:::: details Code
+
+````md
+
 ```vue
   <template>
     <field-input v-model="input" placeholder="Please input" />
@@ -31,6 +35,9 @@ Basic usage
   const input = ref('')
   </script>
 ```
+:::
+````
+::::
 
 ### Disabled
 Disable the Input with the `disabled` attribute.
@@ -38,6 +45,10 @@ Disable the Input with the `disabled` attribute.
 <TextDisable />
 
 #### Viwer Source
+
+:::: details Code
+
+````md
 
 ```vue
   <template>
@@ -49,7 +60,9 @@ Disable the Input with the `disabled` attribute.
   const input = ref('')
   </script>
 ```
-
+:::
+````
+::::
 ### Clearable
 
 Make the Input `clearable` with the `clearable` attribute.
@@ -57,6 +70,9 @@ Make the Input `clearable` with the `clearable` attribute.
 <TextClearable />
 
 #### Viwer Source
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -69,7 +85,9 @@ const input = ref('')
 </script>
 
 ```
-
+:::
+````
+::::
 ### Password box
 
 Make a `toggle-able` password Input with the show-password attribute.
@@ -77,6 +95,9 @@ Make a `toggle-able` password Input with the show-password attribute.
 <TextPassword />
 
 #### Viwer Source
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -93,7 +114,9 @@ import { ref } from 'vue'
 const input = ref('')
 </script>
 ```
-
+:::
+````
+::::
 ### Textarea
 
 Resizable for entering multiple lines of text information. Add attribute `type="textarea"` to change `input` into native `textarea`.
@@ -103,6 +126,9 @@ Control the height by setting the `rows` prop.
 <TextTextarea />
 
 #### Viwer Source
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -119,7 +145,9 @@ import { ref } from 'vue'
 const input = ref('')
 </script>
 ```
-
+:::
+````
+::::
 ### Autosize Textarea
 
 Setting the `autosize` prop for a textarea type of Input makes the height to automatically adjust based on the content. An options object can be provided to `autosize` to specify the minimum and maximum number of lines the textarea can automatically adjust.
@@ -128,6 +156,9 @@ Setting the `autosize` prop for a textarea type of Input makes the height to aut
 <TextTextarea />
 
 #### Viwer Source
+:::: details Code
+
+````md
 
 ```vue
 <template>
@@ -152,6 +183,9 @@ const textarea1 = ref('')
 const textarea2 = ref('')
 </script>
 ```
+:::
+````
+::::
 
 ### Sizes
 
@@ -160,6 +194,9 @@ Add `size` attribute to change the size of Input. In addition to the default siz
 <TextSizes />
 
 #### Viwer Source
+:::: details Code
+
+````md
 ```vue
 <template>
   <el-card class="box-card">
@@ -189,7 +226,9 @@ const input2 = ref('')
 const input3 = ref('')
 </script>
 ```
-
+:::
+````
+::::
 
 ### Limit length
 
@@ -198,6 +237,9 @@ const input3 = ref('')
 <TextLimitLength />
 
 #### Viwer Source
+:::: details Code
+
+````md
 ```vue
 <template>
   <el-card class="box-card">
@@ -227,7 +269,9 @@ const text = ref('')
 const textarea = ref('')
 </script>
 ```
-
+:::
+````
+::::
 ### Props
 
   |   Name    | Description | Type  | Mandatory |
