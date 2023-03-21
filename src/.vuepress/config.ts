@@ -2,8 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
-
+  base: process.env.BASE_REPOSITORY !== "" ? `/${process.env.BASE_REPOSITORY}/` : '/',
   locales: {
     "/": {
       lang: "en-US",
