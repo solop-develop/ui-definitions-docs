@@ -2,7 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 # This file was contributed by Elsio Sanchez, Edwin Betancourt
 
-name: Documentation.
+name: Deploy GH-Pages
 
 # Controls when the action will run.
 on:
@@ -57,14 +57,16 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=9192
         run: |-
           yarn run docs:build
-          > docs/.vuepress/dist
+          > src/.vuepress/dist
+          # > my-docs/src/.vuepress/dist
 
-    - name: Deploy
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: docs/.vuepress/dist
+          folder: src/.vuepress/dist
+          # folder: my-docs/src/.vuepress/dist
           # folder: docs/.vuepress/dist
 
       # - name: Upload dist docs
