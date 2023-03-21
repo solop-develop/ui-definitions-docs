@@ -34,7 +34,6 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           yarn run docs:build
-          > src/.vuepress/dist
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
