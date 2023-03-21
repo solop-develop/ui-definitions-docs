@@ -1,70 +1,99 @@
 import { hopeTheme } from "vuepress-theme-hope";
-
-import { enNavbarConfig, esNavbarConfig } from "./navbar";
-// import { esSidebarConfig, enSidebarConig } from "./sidebar";
+import { enNavbar, zhNavbar, esNavbar } from "./navbar/index.js";
+import { enSidebar, zhSidebar, esSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://github.com/adempiere/adempiere-site.github.io",
+  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "ADempiere",
-    url: "https://adempiere-site.erpya.com",
+    name: "Elsio Sanchez",
+    url: "https://github.com/elsiosanchez",
   },
 
-  iconAssets: "//at.alicdn.com/t/font_2410206_vuzkjonf4s9.css",
-  iconPrefix: "iconfont icon-",
+  iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "https://github.com/adempiere/adempiere-site",
+  repo: "https://github.com/solop-develop/ui-definitions-docs",
 
-  repoDisplay: false,
+  docsDir: "demo/theme-docs/src",
 
-  docsDir: "src",
+  themeColor: {
+    blue: "#2196f3",
+    red: "#f26d6d",
+    green: "#3eaf7c",
+    orange: "#fb9b5f",
+  },
+
+  fullscreen: true,
 
   locales: {
     "/": {
-      navbar: enNavbarConfig,
-      // sidebar: enSidebarConig,
+      // navbar
+      // navbar: enNavbar,
 
-      blog: {
-        description: "ADempiere ERP Community",
-        intro: "/about/",
-        medias: {
-          Gmail: "mailto:info@adempiere.io",
-          GitHub: "https://github.com/adempiere/adempiere-site",
-        },
+      // sidebar
+      sidebar: enSidebar,
+
+      footer: "Default footer",
+
+      // displayFooter: true,
+
+      // metaLocales: {
+      //   editLink: "Edit this page on GitHub",
+      // },
+    },
+
+    /**
+     * Chinese locale config
+     */
+    "/zh/": {
+      // navbar
+      navbar: zhNavbar,
+
+      // sidebar
+      sidebar: zhSidebar,
+
+      footer: "默认页脚",
+
+      displayFooter: true,
+
+      // page meta
+      metaLocales: {
+        editLink: "在 GitHub 上编辑此页",
       },
     },
     "/es/": {
-      navbar: esNavbarConfig,
-      // sidebar: esSidebarConfig,
+      // navbar
+      navbar: esNavbar,
 
-      blog: {
-        description:
-          "VuePress project member, front-end developer, studying for a master's degree in theoretical physics",
-        intro: "/es/about/",
-        medias: {
-          Gmail: "mailto:info@adempiere.io",
-          GitHub: "https://github.com/adempiere/adempiere-site",
-          Discord: "https://discord.gg/8eFAqkhb",
-          Twitter: "https://twitter.com/ADempiereERP",
-        },
+      // sidebar
+      sidebar: esSidebar,
+
+      // footer: "ADempiere Community | About Site",
+      footer: "Default footer",
+
+      displayFooter: true,
+
+      // page meta
+      metaLocales: {
+        editLink: "在 GitHub 上编辑此页",
       },
     },
   },
 
-  displayFooter: true,
-  copyright: "Copyright © 2022-present ADempiere Community",
+  encrypt: {
+    config: {
+      "/demo/encrypt.html": ["1234"],
+      "/zh/demo/encrypt.html": ["1234"],
+    },
+  },
 
   plugins: {
-    blog: true,
-
-    comment: {
-      provider: "Waline",
-      serverURL: "https://<to-be-defined>",
-    },
-
+    // comment: {
+    //   // @ts-expect-error: You should generate and use your own comment service
+    //   provider: "Waline",
+    // },
     feed: {
       atom: true,
       json: true,
@@ -73,143 +102,145 @@ export default hopeTheme({
 
     mdEnhance: {
       align: true,
+      attrs: true,
+      chart: true,
       codetabs: true,
       demo: true,
+      echarts: true,
+      figure: true,
       flowchart: true,
-      footnote: true,
-      imageMark: true,
-      presentation: true,
+      gfm: true,
+      imgLazyload: true,
+      imgMark: true,
+      imgSize: true,
+      include: true,
+      mathjax: true,
+      mark: true,
+      mermaid: true,
+      playground: {
+        presets: ["ts", "vue"],
+      },
+      presentation: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      },
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
+        },
+      ],
       sub: true,
       sup: true,
-      tex: true,
-      vpre: true,
+      tabs: true,
+      vPre: true,
+      vuePlayground: true,
     },
 
-    pwa: {
-      favicon: "/favicon.ico",
-      themeColor: "#5c92d1",
-      cacheHTML: false,
-      maxSize: 3072,
-      apple: {
-        icon: "/assets/icon/apple-touch-icon.png",
-        statusBarColor: "white",
-      },
-      msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
-      },
-      manifest: {
-        name: "ADempiere ERP Community",
-        short_name: "ADempiere ERP",
-        description: "ADempiere ERP, created by peoples like you",
-        theme_color: "#5c92d1",
-        icons: [
-          {
-            src: "/assets/icon/chrome-192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-mask-192.png",
-            sizes: "192x192",
-            purpose: "maskable",
-            type: "image/png",
-          },
-          {
-            src: "/assets/icon/chrome-mask-512.png",
-            sizes: "512x512",
-            purpose: "maskable",
-            type: "image/png",
-          },
-        ],
-        shortcuts: [
-          {
-            name: "Classification",
-            short_name: "Classification",
-            icons: [
-              {
-                src: "/assets/icon/category-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
-              },
-              {
-                src: "/assets/icon/category-monochrome.png",
-                sizes: "192x192",
-                purpose: "monochrome",
-                type: "image/png",
-              },
-            ],
-            url: "/category/",
-            description: "Classification Group",
-          },
-          {
-            name: "Label",
-            short_name: "Label",
-            icons: [
-              {
-                src: "/assets/icon/tag-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
-              },
-              {
-                src: "/assets/icon/tag-monochrome.png",
-                sizes: "192x192",
-                purpose: "monochrome",
-                type: "image/png",
-              },
-            ],
-            url: "/tag/",
-            description: "Tag Grouping",
-          },
-          {
-            name: "Timeline",
-            short_name: "Timeline",
-            icons: [
-              {
-                src: "/assets/icon/timeline-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
-              },
-              {
-                src: "/assets/icon/timeline-monochrome.png",
-                sizes: "192x192",
-                purpose: "monochrome",
-                type: "image/png",
-              },
-            ],
-            url: "/timeline/",
-            description: "Timeline Article List",
-          },
-          {
-            name: "Self Introduction",
-            short_name: "Self Introduction",
-            icons: [
-              {
-                src: "/assets/icon/about-maskable.png",
-                sizes: "192x192",
-                purpose: "maskable",
-                type: "image/png",
-              },
-              {
-                src: "/assets/icon/about-monochrome.png",
-                sizes: "192x192",
-                purpose: "monochrome",
-                type: "image/png",
-              },
-            ],
-            url: "/about/",
-            description: "Self Introduction",
-          },
-        ],
-      },
-    },
+    // all features are enabled for demo, only preserve features you need here
+    // mdEnhance: {
+    //   align: true,
+    //   attrs: true,
+    //   chart: true,
+    //   codetabs: true,
+    //   demo: true,
+    //   echarts: true,
+    //   figure: true,
+    //   flowchart: true,
+    //   gfm: true,
+    //   imgLazyload: true,
+    //   imgSize: true,
+    //   include: true,
+    //   katex: true,
+    //   mark: true,
+    //   mermaid: true,
+    //   playground: {
+    //     presets: ["ts", "vue"],
+    //   },
+    //   presentation: {
+    //     plugins: ["highlight", "math", "search", "notes", "zoom"],
+    //   },
+    //   stylize: [
+    //     {
+    //       matcher: "Recommended",
+    //       replacer: ({ tag }) => {
+    //         if (tag === "em")
+    //           return {
+    //             tag: "Badge",
+    //             attrs: { type: "tip" },
+    //             content: "Recommended",
+    //           };
+    //       },
+    //     },
+    //   ],
+    //   sub: true,
+    //   sup: true,
+    //   tabs: true,
+    //   vPre: true,
+    //   vuePlayground: true,
+    // },
+
+    // uncomment these if you want a pwa
+    // pwa: {
+    //   favicon: "/favicon.ico",
+    //   cacheHTML: true,
+    //   cachePic: true,
+    //   appendBase: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-icon-152.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/ms-icon-144.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/chrome-mask-512.png",
+    //         sizes: "512x512",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-mask-192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-512.png",
+    //         sizes: "512x512",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-192.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //     shortcuts: [
+    //       {
+    //         name: "Demo",
+    //         short_name: "Demo",
+    //         url: "/demo/",
+    //         icons: [
+    //           {
+    //             src: "/assets/icon/guide-maskable.png",
+    //             sizes: "192x192",
+    //             purpose: "maskable",
+    //             type: "image/png",
+    //           },
+    //         ],
+    //       },
+    //     ],
+    //   },
+    // },
   },
 });
