@@ -16,9 +16,9 @@ on:
       - experimental
       - gh-pages
     # takes only the directory changes
-    paths:
-      - 'docs/**'
-      - .github/workflows/deploy.yml
+    # paths:
+    #   - 'docs/**'
+    #   - .github/workflows/deploy.yml
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -41,8 +41,9 @@ jobs:
           node-version: 18
           cache: 'yarn'
 
-      - name: Enable https to install packages
-        run: git config --global url."https://".insteadOf git://
+      # - name: Enable https to install packages
+      #   run: git config --global url."https://".insteadOf git://
+      - run: cd my-docs
 
       - name: Install Deps
         run: yarn install --frozen-lockfile
@@ -54,11 +55,13 @@ jobs:
       #   run: yarn docs:build
       - name: Build Docs
         env:
-          NODE_OPTIONS: --max_old_space_size=9192
+          NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           yarn run docs:build
           > src/.vuepress/dist
-          # > my-docs/src/.vuepress/dist
+        # > my-docs/src/.vuepress/dist
+
+      - run: ls && ls src/.vuepress/dist
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
