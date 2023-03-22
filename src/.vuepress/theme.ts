@@ -94,6 +94,21 @@ export default hopeTheme({
     //   // @ts-expect-error: You should generate and use your own comment service
     //   provider: "Waline",
     // },
+    components: {
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "SiteInfo",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
+    },
     feed: {
       atom: true,
       json: true,
