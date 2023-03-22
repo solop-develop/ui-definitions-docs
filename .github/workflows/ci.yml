@@ -12,15 +12,12 @@ on:
       - develop
       - test**
       - experimental
-    paths-ignore:
-      - 'docs/**'
-      - .github/workflows/docs.yml
 
 jobs:
 
-  # Build dist application ADempiere-Vue
+  # Build distribution files
   build-app:
-    name: Build dist epale
+    name: Build dist
     runs-on: ubuntu-latest
     env:
       BASE_REPOSITORY: ${{ github.event.repository.name }}
@@ -28,9 +25,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-
-      # - name: add
-      #   run: echo "BASE_REPOSITORY=${{ github.event.repository.name }}" >> $GITHUB_ENV
 
       - name: Node configuration
         uses: actions/setup-node@v3
@@ -41,20 +35,8 @@ jobs:
       - name: Install packages
         run: yarn ci
 
-      - name: test-name
-        run: echo "$BASE_REPOSITORY"
-
       - name: Compile dist
         run: yarn docs:build
-
-      - name: epale
-        run: ls
-
-      - name: test
-        run: echo "$BASE_REPOSITORY"
-
-      - name: github
-        run: echo "${{ github.event.repository.name }}"
 
       - name: Upload dist app
         uses: actions/upload-artifact@v3
