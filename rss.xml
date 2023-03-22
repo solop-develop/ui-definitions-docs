@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/</link>
     <description>A user interface definition documentation based on components, compositions, and pattern layouts.</description>
     <language>en-US</language>
-    <pubDate>Tue, 21 Mar 2023 21:15:52 GMT</pubDate>
-    <lastBuildDate>Tue, 21 Mar 2023 21:15:52 GMT</lastBuildDate>
+    <pubDate>Wed, 22 Mar 2023 18:58:45 GMT</pubDate>
+    <lastBuildDate>Wed, 22 Mar 2023 18:58:45 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by Elsio Sanchez</copyright>
@@ -16,10 +16,47 @@
       <url>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/logo.svg</url>
       <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/</link>
     </image>
-    <category>Docs</category>
     <category>Component</category>
+    <category>Molecule</category>
+    <category>Docs</category>
     <category>Atom</category>
-    <category>Molecula</category>
+    <item>
+      <title>Action Panel</title>
+      <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html</link>
+      <guid>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html</guid>
+      <source url="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/rss.xml">Action Panel</source>
+      <description>It is a panel with 3 general actions. Option: Close Check Cleared. Clear Action This Action is used to delete or clear the content of the panel Viwer Source Code Check Action Th...</description>
+      <category>Component</category>
+      <category>Molecule</category>
+      <pubDate>Wed, 22 Mar 2023 18:56:36 GMT</pubDate>
+      <content:encoded><![CDATA[<span>
+<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
+<!-- <Badge text="Closed" color="green" />
+<Badge text="Cleared" color="green" />
+<Badge text="Check" color="green" /> -->
+<h2> <strong>Clear Action</strong></h2>
+<p>This Action is used to delete or clear the content of the panel</p>
+</span>
+]]></content:encoded>
+      <enclosure url="https://developer.stackblitz.com/img/open_in_stackblitz.svg" type="image/svg+xml"/>
+    </item>
+    <item>
+      <title>Paginations</title>
+      <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/Paginations.html</link>
+      <guid>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/Paginations.html</guid>
+      <source url="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/rss.xml">Paginations</source>
+      <description>If you have too much data to display in one page, use pagination. Basic usage Set layout with different pagination elements you wish to display separated with a comma. Paginatio...</description>
+      <category>Component</category>
+      <category>Molecule</category>
+      <pubDate>Wed, 22 Mar 2023 18:56:36 GMT</pubDate>
+      <content:encoded><![CDATA[<span>
+<p>If you have too much data to display in one page, use pagination.</p>
+<h2> <strong>Basic usage</strong></h2>
+<p>Set <code>layout</code> with different pagination elements you wish to display separated with a comma. Pagination elements are: <code>prev</code> (a button navigating to the previous page), <code>next</code> (a button navigating to the next page), <code>pager</code> (page list), jumper (a jump-to input), <code>total</code> (total item count), <code>size</code> (a select to determine page size) and <code>-&gt;</code>(every element after this symbol will be pulled to the right).</p>
+</span>
+]]></content:encoded>
+      <enclosure url="https://developer.stackblitz.com/img/open_in_stackblitz.svg" type="image/svg+xml"/>
+    </item>
     <item>
       <title>Slide page</title>
       <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/slides.html</link>
@@ -32,40 +69,30 @@
       <enclosure url="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/logo.svg" type="image/svg+xml"/>
     </item>
     <item>
-      <title>Componentes</title>
+      <title>Components</title>
       <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/</link>
       <guid>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/</guid>
-      <source url="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/rss.xml">Componentes</source>
+      <source url="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/rss.xml">Components</source>
       <description>Component Documentation The Components are separated into and Atoms FieldAvatar (Atoms/FieldAvatar/README.md) FieldButtom (Atoms/FieldButtom/README.md) FieldDatePiker (Atoms/Fie...</description>
       <category>Docs</category>
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<h2> Component Documentation</h2>
 <p>The Components are separated into </p>
-<!-- :::: details Code
-
-````md
-
-```vue
-```
-
-:::
-````
-
-:::: -->
 <h2> Atoms</h2>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/" target="blank">FieldDatePiker</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldImage/" target="blank">FieldImage</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldNumber/" target="blank">FieldNumber</a></strong></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldProgress/" target="blank">FieldProgress</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSelect/" target="blank">FieldSelect</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSlider/" target="blank">FieldSlider</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/" target="blank">FieldSwitch</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldTags/" target="blank">FieldTags</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldText/" target="blank">FieldText</a></h3>
-<h2> molecula</h2>
-<!-- ### [paginacion](molecula/paginacion.md) -->
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/" target="blank">FieldDatePiker</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldImage/" target="blank">FieldImage</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldNumber/" target="blank">FieldNumber</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldProgress/" target="blank">FieldProgress</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldSelect/" target="blank">FieldSelect</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldSlider/" target="blank">FieldSlider</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/" target="blank">FieldSwitch</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldTags/" target="blank">FieldTags</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldText/" target="blank">FieldText</a></em></h3>
+<h2> Molecules</h2>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html" target="blank">ActionPanel</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Molecules/Paginations.html" target="blank">Paginations</a></em></h3>
 ]]></content:encoded>
     </item>
     <item>
@@ -267,26 +294,6 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
 Input data using mouse or keyboard..
 <h3> Basic</h3>
 <p>Basic usage</p>
-</span>
-]]></content:encoded>
-      <enclosure url="https://developer.stackblitz.com/img/open_in_stackblitz.svg" type="image/svg+xml"/>
-    </item>
-    <item>
-      <title>Action Panel</title>
-      <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html</link>
-      <guid>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html</guid>
-      <source url="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/rss.xml">Action Panel</source>
-      <description>It is a panel with 3 general actions. Option: Close Check Cleared. Clear Action This Action is used to delete or clear the content of the panel Viwer Source Code Check Action Th...</description>
-      <category>Component</category>
-      <category>Molecula</category>
-      <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
-      <content:encoded><![CDATA[<span>
-<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
-<!-- <Badge text="Closed" color="green" />
-<Badge text="Cleared" color="green" />
-<Badge text="Check" color="green" /> -->
-<h2> <strong>Clear Action</strong></h2>
-<p>This Action is used to delete or clear the content of the panel</p>
 </span>
 ]]></content:encoded>
       <enclosure url="https://developer.stackblitz.com/img/open_in_stackblitz.svg" type="image/svg+xml"/>

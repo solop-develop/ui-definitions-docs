@@ -9,18 +9,82 @@
   </author>
   <logo>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/logo.svg</logo>
   <rights>Copyright by Elsio Sanchez</rights>
-  <updated>2023-03-21T21:15:52.949Z</updated>
+  <updated>2023-03-22T18:58:45.633Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/"/>
-  <category term="Docs"/>
   <category term="Component"/>
+  <category term="Molecule"/>
+  <category term="Docs"/>
   <category term="Atom"/>
-  <category term="Molecula"/>
   <contributor>
     <name>Elsio Sanchez</name>
     <uri>https://github.com/elsiosanchez</uri>
   </contributor>
+  <entry>
+    <title type="text">Action Panel</title>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html"/>
+    <updated>2023-03-22T18:56:36.000Z</updated>
+    <summary type="html"><![CDATA[<span>
+<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
+<!-- <Badge text="Closed" color="green" />
+<Badge text="Cleared" color="green" />
+<Badge text="Check" color="green" /> -->
+<h2> <strong>Clear Action</strong></h2>
+<p>This Action is used to delete or clear the content of the panel</p>
+</span>]]></summary>
+    <content type="html"><![CDATA[<span>
+<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
+<!-- <Badge text="Closed" color="green" />
+<Badge text="Cleared" color="green" />
+<Badge text="Check" color="green" /> -->
+<h2> <strong>Clear Action</strong></h2>
+<p>This Action is used to delete or clear the content of the panel</p>
+</span>
+]]></content>
+    <author>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </author>
+    <category term="Component"/>
+    <category term="Molecule"/>
+    <contributor>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </contributor>
+    <published>2023-03-22T18:56:36.000Z</published>
+    <rights>Copyright by Elsio Sanchez</rights>
+  </entry>
+  <entry>
+    <title type="text">Paginations</title>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/Paginations.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/Paginations.html"/>
+    <updated>2023-03-22T18:56:36.000Z</updated>
+    <summary type="html"><![CDATA[<span>
+<p>If you have too much data to display in one page, use pagination.</p>
+<h2> <strong>Basic usage</strong></h2>
+<p>Set <code>layout</code> with different pagination elements you wish to display separated with a comma. Pagination elements are: <code>prev</code> (a button navigating to the previous page), <code>next</code> (a button navigating to the next page), <code>pager</code> (page list), jumper (a jump-to input), <code>total</code> (total item count), <code>size</code> (a select to determine page size) and <code>-&gt;</code>(every element after this symbol will be pulled to the right).</p>
+</span>]]></summary>
+    <content type="html"><![CDATA[<span>
+<p>If you have too much data to display in one page, use pagination.</p>
+<h2> <strong>Basic usage</strong></h2>
+<p>Set <code>layout</code> with different pagination elements you wish to display separated with a comma. Pagination elements are: <code>prev</code> (a button navigating to the previous page), <code>next</code> (a button navigating to the next page), <code>pager</code> (page list), jumper (a jump-to input), <code>total</code> (total item count), <code>size</code> (a select to determine page size) and <code>-&gt;</code>(every element after this symbol will be pulled to the right).</p>
+</span>
+]]></content>
+    <author>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </author>
+    <category term="Component"/>
+    <category term="Molecule"/>
+    <contributor>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </contributor>
+    <published>2023-03-22T18:56:36.000Z</published>
+    <rights>Copyright by Elsio Sanchez</rights>
+  </entry>
   <entry>
     <title type="text">Slide page</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/slides.html</id>
@@ -42,53 +106,32 @@
     <rights>Copyright by Elsio Sanchez</rights>
   </entry>
   <entry>
-    <title type="text">Componentes</title>
+    <title type="text">Components</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T18:56:36.000Z</updated>
     <summary type="html"><![CDATA[<h2> Component Documentation</h2>
 <p>The Components are separated into </p>
-<!-- :::: details Code
-
-````md
-
-```vue
-```
-
-:::
-````
-
-:::: -->
 <h2> Atoms</h2>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>]]></summary>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></em></h3>]]></summary>
     <content type="html"><![CDATA[<h2> Component Documentation</h2>
 <p>The Components are separated into </p>
-<!-- :::: details Code
-
-````md
-
-```vue
-```
-
-:::
-````
-
-:::: -->
 <h2> Atoms</h2>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/" target="blank">FieldDatePiker</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldImage/" target="blank">FieldImage</a></strong></h3>
-<h3> <strong><a href="/ui-definitions-docs/docs/Component/Atoms/FieldNumber/" target="blank">FieldNumber</a></strong></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldProgress/" target="blank">FieldProgress</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSelect/" target="blank">FieldSelect</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSlider/" target="blank">FieldSlider</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/" target="blank">FieldSwitch</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldTags/" target="blank">FieldTags</a></h3>
-<h3> <a href="/ui-definitions-docs/docs/Component/Atoms/FieldText/" target="blank">FieldText</a></h3>
-<h2> molecula</h2>
-<!-- ### [paginacion](molecula/paginacion.md) -->
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/" target="blank">FieldAvatar</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldButtom/" target="blank">FieldButtom</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/" target="blank">FieldDatePiker</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldImage/" target="blank">FieldImage</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldNumber/" target="blank">FieldNumber</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldProgress/" target="blank">FieldProgress</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldSelect/" target="blank">FieldSelect</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldSlider/" target="blank">FieldSlider</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/" target="blank">FieldSwitch</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldTags/" target="blank">FieldTags</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Atoms/FieldText/" target="blank">FieldText</a></em></h3>
+<h2> Molecules</h2>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html" target="blank">ActionPanel</a></em></h3>
+<h3> <em><a href="/ui-definitions-docs/docs/Component/Molecules/Paginations.html" target="blank">Paginations</a></em></h3>
 ]]></content>
     <author>
       <name>Elsio Sanchez</name>
@@ -506,41 +549,6 @@ Input data using mouse or keyboard..
     </author>
     <category term="Component"/>
     <category term="Atom"/>
-    <contributor>
-      <name>Elsio Sanchez</name>
-      <uri>https://github.com/elsiosanchez</uri>
-    </contributor>
-    <published>2023-03-21T20:48:34.000Z</published>
-    <rights>Copyright by Elsio Sanchez</rights>
-  </entry>
-  <entry>
-    <title type="text">Action Panel</title>
-    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html</id>
-    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
-    <summary type="html"><![CDATA[<span>
-<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
-<!-- <Badge text="Closed" color="green" />
-<Badge text="Cleared" color="green" />
-<Badge text="Check" color="green" /> -->
-<h2> <strong>Clear Action</strong></h2>
-<p>This Action is used to delete or clear the content of the panel</p>
-</span>]]></summary>
-    <content type="html"><![CDATA[<span>
-<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
-<!-- <Badge text="Closed" color="green" />
-<Badge text="Cleared" color="green" />
-<Badge text="Check" color="green" /> -->
-<h2> <strong>Clear Action</strong></h2>
-<p>This Action is used to delete or clear the content of the panel</p>
-</span>
-]]></content>
-    <author>
-      <name>Elsio Sanchez</name>
-      <uri>https://github.com/elsiosanchez</uri>
-    </author>
-    <category term="Component"/>
-    <category term="Molecula"/>
     <contributor>
       <name>Elsio Sanchez</name>
       <uri>https://github.com/elsiosanchez</uri>

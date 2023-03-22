@@ -13,6 +13,46 @@
   ],
   "items": [
     {
+      "title": "Action Panel",
+      "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html",
+      "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html",
+      "summary": "It is a panel with 3 general actions. Option: Close Check Cleared. Clear Action This Action is used to delete or clear the content of the panel Viwer Source Code Check Action Th...",
+      "content_html": "<span>\n<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>\n<!-- <Badge text=\"Closed\" color=\"green\" />\n<Badge text=\"Cleared\" color=\"green\" />\n<Badge text=\"Check\" color=\"green\" /> -->\n<h2> <strong>Clear Action</strong></h2>\n<p>This Action is used to delete or clear the content of the panel</p>\n</span>\n",
+      "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
+      "date_published": "2023-03-22T18:56:36.000Z",
+      "date_modified": "2023-03-22T18:56:36.000Z",
+      "authors": [
+        {
+          "name": "Elsio Sanchez",
+          "url": "https://github.com/elsiosanchez"
+        }
+      ],
+      "tags": [
+        "Component",
+        "Molecule"
+      ]
+    },
+    {
+      "title": "Paginations",
+      "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/Paginations.html",
+      "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/Paginations.html",
+      "summary": "If you have too much data to display in one page, use pagination. Basic usage Set layout with different pagination elements you wish to display separated with a comma. Paginatio...",
+      "content_html": "<span>\n<p>If you have too much data to display in one page, use pagination.</p>\n<h2> <strong>Basic usage</strong></h2>\n<p>Set <code>layout</code> with different pagination elements you wish to display separated with a comma. Pagination elements are: <code>prev</code> (a button navigating to the previous page), <code>next</code> (a button navigating to the next page), <code>pager</code> (page list), jumper (a jump-to input), <code>total</code> (total item count), <code>size</code> (a select to determine page size) and <code>-&gt;</code>(every element after this symbol will be pulled to the right).</p>\n</span>\n",
+      "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
+      "date_published": "2023-03-22T18:56:36.000Z",
+      "date_modified": "2023-03-22T18:56:36.000Z",
+      "authors": [
+        {
+          "name": "Elsio Sanchez",
+          "url": "https://github.com/elsiosanchez"
+        }
+      ],
+      "tags": [
+        "Component",
+        "Molecule"
+      ]
+    },
+    {
       "title": "Slide page",
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/slides.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/slides.html",
@@ -30,13 +70,13 @@
       "tags": []
     },
     {
-      "title": "Componentes",
+      "title": "Components",
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/",
       "summary": "Component Documentation The Components are separated into and Atoms FieldAvatar (Atoms/FieldAvatar/README.md) FieldButtom (Atoms/FieldButtom/README.md) FieldDatePiker (Atoms/Fie...",
-      "content_html": "<h2> Component Documentation</h2>\n<p>The Components are separated into </p>\n<!-- :::: details Code\n\n````md\n\n```vue\n```\n\n:::\n````\n\n:::: -->\n<h2> Atoms</h2>\n<h3> <strong><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/\" target=\"blank\">FieldAvatar</a></strong></h3>\n<h3> <strong><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldButtom/\" target=\"blank\">FieldButtom</a></strong></h3>\n<h3> <strong><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/\" target=\"blank\">FieldDatePiker</a></strong></h3>\n<h3> <strong><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldImage/\" target=\"blank\">FieldImage</a></strong></h3>\n<h3> <strong><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldNumber/\" target=\"blank\">FieldNumber</a></strong></h3>\n<h3> <a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldProgress/\" target=\"blank\">FieldProgress</a></h3>\n<h3> <a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldSelect/\" target=\"blank\">FieldSelect</a></h3>\n<h3> <a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldSlider/\" target=\"blank\">FieldSlider</a></h3>\n<h3> <a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/\" target=\"blank\">FieldSwitch</a></h3>\n<h3> <a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldTags/\" target=\"blank\">FieldTags</a></h3>\n<h3> <a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldText/\" target=\"blank\">FieldText</a></h3>\n<h2> molecula</h2>\n<!-- ### [paginacion](molecula/paginacion.md) -->\n",
+      "content_html": "<h2> Component Documentation</h2>\n<p>The Components are separated into </p>\n<h2> Atoms</h2>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldAvatar/\" target=\"blank\">FieldAvatar</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldButtom/\" target=\"blank\">FieldButtom</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker/\" target=\"blank\">FieldDatePiker</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldImage/\" target=\"blank\">FieldImage</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldNumber/\" target=\"blank\">FieldNumber</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldProgress/\" target=\"blank\">FieldProgress</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldSelect/\" target=\"blank\">FieldSelect</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldSlider/\" target=\"blank\">FieldSlider</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldSwitch/\" target=\"blank\">FieldSwitch</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldTags/\" target=\"blank\">FieldTags</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Atoms/FieldText/\" target=\"blank\">FieldText</a></em></h3>\n<h2> Molecules</h2>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html\" target=\"blank\">ActionPanel</a></em></h3>\n<h3> <em><a href=\"/ui-definitions-docs/docs/Component/Molecules/Paginations.html\" target=\"blank\">Paginations</a></em></h3>\n",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T18:56:36.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -264,26 +304,6 @@
       "tags": [
         "Component",
         "Atom"
-      ]
-    },
-    {
-      "title": "Action Panel",
-      "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html",
-      "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecula/ActionPanel.html",
-      "summary": "It is a panel with 3 general actions. Option: Close Check Cleared. Clear Action This Action is used to delete or clear the content of the panel Viwer Source Code Check Action Th...",
-      "content_html": "<span>\n<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>\n<!-- <Badge text=\"Closed\" color=\"green\" />\n<Badge text=\"Cleared\" color=\"green\" />\n<Badge text=\"Check\" color=\"green\" /> -->\n<h2> <strong>Clear Action</strong></h2>\n<p>This Action is used to delete or clear the content of the panel</p>\n</span>\n",
-      "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
-      "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
-      "authors": [
-        {
-          "name": "Elsio Sanchez",
-          "url": "https://github.com/elsiosanchez"
-        }
-      ],
-      "tags": [
-        "Component",
-        "Molecula"
       ]
     },
     {
