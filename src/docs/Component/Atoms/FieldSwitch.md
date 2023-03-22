@@ -15,13 +15,13 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 Switch is used for switching between two opposing states.
 
-### Basic usage
+### **Basic usage**
 
 Bind `v-model` to a `Boolean` typed variable. The `--el-switch-on-color` and `--el-switch-off-color` CSS variables decides the background color in two states.
 
 <SwitchBasic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -50,11 +50,11 @@ const value2 = ref(true)
 ````
 ::::
 
-### Sizes
+### **Sizes**
 
 <SwitchSizes />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -89,7 +89,7 @@ const value = ref(true)
 :::
 ````
 ::::
-### Text description
+### **Text description**
 
 You can add `active-text` and `inactive-text` attribute to show texts. use `inline-prompt` attribute to control text is displayed inside dot.
 
@@ -97,7 +97,7 @@ You can add `active-text` and `inactive-text` attribute to show texts.
 
 <SwitchText />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -145,7 +145,7 @@ const value3 = ref(true)
 ::::
 
 
-### Display custom icons
+### **Display custom icons**
 
 :::tip
 Use the `active-icon` and `inactive-icon` attribute to add icon. You can pass either string for the component name (registered in advance) or the component itself which is a SVG Vue component. Element Plus has provided a set of icon that you can find at [icon](https://element-plus.org/en-US/component/icon.html)
@@ -153,7 +153,7 @@ Use the `active-icon` and `inactive-icon` attribute to add icon. You can pass ei
 
 <SwitchIcon />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -184,13 +184,13 @@ const value2 = ref(true)
 :::
 ````
 ::::
-### Disabled
+### **Disabled**
 
 Adding the `disabled` attribute disables Switch.
 
 <SwitchDisabled />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -214,13 +214,13 @@ const value2 = ref(true)
 :::
 ````
 ::::
-### Loading
+### **Loading**
 
 Setting the `loading` attribute to `true` indicates a `loading` state on the Switch.
 
 <SwitchLoading />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -243,13 +243,13 @@ const value2 = ref(false)
 :::
 ````
 ::::
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `value`  | binding value, it should be equivalent to either `active-value` or `inactive-value`, by default it's `boolean` type  | <el-tag effect="Light">  **{{ 'boolean / string / number' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -268,6 +268,21 @@ const value2 = ref(false)
 | `content` | Customize Default Content |
 | `footer` | Customize Default Content Bottom |
  -->
+### **Example for Developer**
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-witch?file=app.vue)
+
+
+### **Directory**
+
+
+```bash
+  └─ src                                            # Main source code.
+      └── Components                                # Global components
+              └── Atoms                             # Atom components
+                  └── FieldSwitch                   # Field Switch specific components.
+```
 
 
 </span>

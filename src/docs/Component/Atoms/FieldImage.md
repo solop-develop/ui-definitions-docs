@@ -17,14 +17,14 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 Besides the native features of img, support lazy load, custom placeholder and load failure, etc.
 
-### Basic Usage
+### **Basic Usage**
 
 Indicate how the image should be resized to `fit` its container by `fit`, same as native [object-fit.](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
 
 
 <ImageBasic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -73,27 +73,27 @@ const url =
 
 ::::
 
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `src`  | image source, same as native.  | <el-tag effect="Light">  **{{ 'string' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   | `fit`    | indicate how the image should be resized to fit its container, same as [object-fit.](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) <el-tag effect="Light"> **{{ 'fit / contain / cover / none / scale-down' }}** </el-tag> | <el-tag effect="Light">  **{{ 'string' }}** </el-tag> | <el-tag effect="dark" round > **{{ 'cover' }}** </el-tag> |
 
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-image?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash

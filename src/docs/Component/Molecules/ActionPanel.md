@@ -230,7 +230,7 @@ const handleRefresh = () => {
 
 ::::
 
-## Props
+## *Props*
 
 |   Name    | Description | Type  | Mandatory |
 | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -242,7 +242,7 @@ const handleRefresh = () => {
 |    `actionCheck`  | Method or Function that is triggered when clicking on the Check Button.  | <el-tag effect="Light">  **{{ 'Function' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
 
-## Attributes
+## **Attributes**
 
 |   Name    | Description | Type   | Default |
 | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -256,13 +256,22 @@ const handleRefresh = () => {
 |  `slotsAlingRight` | Position of the Custom Content to the Right of the Button Panel | <el-tag effect="Light">  **{{ 'String' }}** </el-tag> | <el-tag effect="dark" round > **{{ '────────────' }}** </el-tag> |
 
 
-## Example for Developer
+## **Events**
+
+|   Name    | Description | Type  |
+| :---------: | :-----------: | :-----------------: |
+|    `actionClear`  | Method or Function that is triggered when clicking on the Clear Button.  | <el-tag effect="Light">  **{{ 'Function' }}** </el-tag>  |
+|    `actionClose`  | Method or Function that is triggered when clicking on the Close Button.  | <el-tag effect="Light">  **{{ 'Function' }}** </el-tag>  |
+|    `actionCheck`  | Method or Function that is triggered when clicking on the Check Button.  | <el-tag effect="Light">  **{{ 'Function' }}** </el-tag>  |
+
+
+## **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/molecule-action-panel?file=app.vue)
 
 
-## Directory
+## **Directory**
 
 
 ```bash

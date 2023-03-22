@@ -16,7 +16,7 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 Input numerical values with a customizable range.
 
-### Basic usage
+### **Basic usage**
 
 Bind a variable to `v-model` in `<el-input-number>` element and you are set.
 
@@ -26,7 +26,7 @@ Bind a variable to `v-model` in `<el-input-number>` element and you are set.
 
 <NumberBsic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -49,13 +49,13 @@ const num = ref(1)
 ````
 ::::
 
-### Disabled
+### **Disabled**
 
 The `disabled` attribute accepts a `boolean`, and if the value is `true`, the component is disabled. If you just need to control the value within a range, you can add min attribute to set the minimum value and `max` to set the maximum value. By default, the minimum value is `0`.
 
 <NumberDisabled />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -78,7 +78,7 @@ const num = ref(1)
 
 ::::
 
-### Steps
+### **Steps**
 
 Allows you to define incremental steps.
 
@@ -86,7 +86,7 @@ Add `step` attribute to set the step.
 
 <NumberSteps />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -109,13 +109,13 @@ const num = ref(1)
 
 ::::
 
-### Step strictly
+### **Step strictly**
 
 The `step-strictly` attribute accepts a `boolean`. if this attribute is `true`, input value can only be multiple of step.
 
 <NumberStepsStrictly />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -138,7 +138,7 @@ const num = ref(1)
 
 ::::
 
-### Precision
+### **Precision**
 
 Add `precision` attribute to set the precision of input value.
 
@@ -148,7 +148,7 @@ Add `precision` attribute to set the precision of input value.
 
 <NumberPrecision />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -172,13 +172,13 @@ const num = ref(1)
 ::::
 
 
-### Controls Position
+### **Controls Position**
 
 Set `controls-position` to decide the position of control buttons.
 
 <NumberControlsPosition />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -201,13 +201,13 @@ const num = ref(1)
 
 ::::
 
-### Value Type
+### **Value Type**
 <br>
 <br>
 
 <NumberValueType />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -250,14 +250,14 @@ const num = ref(1)
 ::::
 
 
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `num`  | binding value  | <el-tag effect="Light">  **{{ 'number' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'true' }}** </el-tag> |
   |    `valueType`  | Type value <el-tag effect="Light">  **{{ 'ID / INTEGER / NUMBER / QUANTITY / AMOUNT / COSTS_PLUS_PRICES' }}** </el-tag>  | <el-tag effect="Light">  **{{ 'string' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -272,7 +272,7 @@ const num = ref(1)
   | `size`    |  size of Switch <el-tag effect=Light> large / default / small </el-tag>  | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'string' }}** </el-tag></el-tag> | <el-tag effect="dark" round > {{ 'default' }} </el-tag> |
   | `placeholder`    |  placeholder the Select  | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'string' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ 'Select' }}** </el-tag> |
   | `slotsCurrency`    |  The format or symbol of the currency to display  | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'string' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ '$' }}** </el-tag> |
-### Slots
+### **Slots**
 
 |   Name    | Description |
 | :---------: | :-----------: |
@@ -280,13 +280,13 @@ const num = ref(1)
 | `footer` | Customize Default Content Bottom |
 
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-number?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash

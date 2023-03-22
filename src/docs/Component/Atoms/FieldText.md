@@ -14,12 +14,12 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 <span>
 Input data using mouse or keyboard..
 
-### Basic
+### **Basic**
 Basic usage
 
 <TextBasic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -39,12 +39,12 @@ Basic usage
 ````
 ::::
 
-### Disabled
+### **Disabled**
 Disable the Input with the `disabled` attribute.
 
 <TextDisable />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -63,13 +63,13 @@ Disable the Input with the `disabled` attribute.
 :::
 ````
 ::::
-### Clearable
+### **Clearable**
 
 Make the Input `clearable` with the `clearable` attribute.
 
 <TextClearable />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -88,13 +88,13 @@ const input = ref('')
 :::
 ````
 ::::
-### Password box
+### **Password box**
 
 Make a `toggle-able` password Input with the show-password attribute.
 
 <TextPassword />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -117,7 +117,7 @@ const input = ref('')
 :::
 ````
 ::::
-### Textarea
+### **Textarea**
 
 Resizable for entering multiple lines of text information. Add attribute `type="textarea"` to change `input` into native `textarea`.
 
@@ -125,7 +125,7 @@ Control the height by setting the `rows` prop.
 
 <TextTextarea />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -148,14 +148,14 @@ const input = ref('')
 :::
 ````
 ::::
-### Autosize Textarea
+### **Autosize Textarea**
 
 Setting the `autosize` prop for a textarea type of Input makes the height to automatically adjust based on the content. An options object can be provided to `autosize` to specify the minimum and maximum number of lines the textarea can automatically adjust.
 
 
 <TextTextarea />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -187,13 +187,13 @@ const textarea2 = ref('')
 ````
 ::::
 
-### Sizes
+### **Sizes**
 
 Add `size` attribute to change the size of Input. In addition to the default size, there are two other options: `large`, `small`.
 
 <TextSizes />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -230,13 +230,13 @@ const input3 = ref('')
 ````
 ::::
 
-### Limit length
+### **Limit length**
 
 `maxlength` and `minlength` attributes of input, they declare a limit on the number of characters a user can input. The "number of characters" is measured using JavaScript string length.Setting the `maxlength` prop for a text or textarea type of Input can limit the length of input value, allows you to show word count by setting `show-word-limit` to `true` at the same time.
 
 <TextLimitLength />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -272,13 +272,13 @@ const textarea = ref('')
 :::
 ````
 ::::
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `type`  | type of input  | <el-tag effect="Light">  **{{ 'String' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -294,7 +294,7 @@ const textarea = ref('')
   | `rows`    |  number of rows of `textarea`, only works when `type` is `textarea`  | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'Number' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ '2' }}** </el-tag> |
   | `autosize`    |  whether textarea has an adaptive height, only works when `type` is `textarea`. Can accept an object, e.g.` { minRows: 2, maxRows: 6 } ` | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'Boolean / Object' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
 
-### Slots
+### **Slots**
 
 |   Name    | Description |
 | :---------: | :-----------: |
@@ -303,13 +303,13 @@ const textarea = ref('')
 | `footer` | Customize Default Content Bottom |
 
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/field-text?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash
