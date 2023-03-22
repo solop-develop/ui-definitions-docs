@@ -70,6 +70,11 @@ import ActionPanelClear from './Component/Molecula/ActionPanelClear.vue';
 import ActionPanelClose from './Component/Molecula/ActionPanelClose.vue';
 import ActionPanelCheck from './Component/Molecula/ActionPanelCheck.vue';
 import ActionPanelSlots from './Component/Molecula/ActionPanelSlots.vue';
+// Paginations
+import PaginationBackground from './Component/Molecula/Paginations/PaginationBackground.vue';
+import PaginationBasic from './Component/Molecula/Paginations/PaginationBasic.vue';
+import PaginationHide from './Component/Molecula/Paginations/PaginationHide.vue';
+import PaginationEvents from './Component/Molecula/Paginations/PaginationEvents.vue';
 
 export default defineClientConfig({
   enhance: ({ app, router, siteData }) => {
@@ -138,5 +143,11 @@ export default defineClientConfig({
     app.component('ActionPanelClose', ActionPanelClose)
     app.component('ActionPanelCheck', ActionPanelCheck)
     app.component('ActionPanelSlots', ActionPanelSlots)
+    // Paginations
+    app.component('PaginationBackground', PaginationBackground)
+    app.component('PaginationBasic', PaginationBasic)
+    app.component('PaginationHide', PaginationHide)
+    app.component('PaginationEvents', PaginationEvents)
+
   },
 });

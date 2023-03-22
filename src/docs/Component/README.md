@@ -1,5 +1,5 @@
 ---
-title: Componentes
+title: Components
 icon: creative
 category:
   - Docs
@@ -11,32 +11,21 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 The Components are separated into <Badge text="Atoms," />  <Badge text="Molecules" /> and <Badge text="Organism" />
 
-<!-- :::: details Code
-
-````md
-
-```vue
-```
-
-:::
-````
-
-:::: -->
-
 ## Atoms
 
-### **[FieldAvatar](Atoms/FieldAvatar/README.md)**
-### **[FieldButtom](Atoms/FieldButtom/README.md)**
-### **[FieldDatePiker](Atoms/FieldDatePiker/README.md)**
-### **[FieldImage](Atoms/FieldImage/README.md)**
-### **[FieldNumber](Atoms/FieldNumber/README.md)**
-### [FieldProgress](Atoms/FieldProgress/README.md)
-### [FieldSelect](Atoms/FieldSelect/README.md)
-### [FieldSlider](Atoms/FieldSlider/README.md)
-### [FieldSwitch](Atoms/FieldSwitch/README.md)
-### [FieldTags](Atoms/FieldTags/README.md)
-### [FieldText](Atoms/FieldText/README.md)
+### *[FieldAvatar](Atoms/FieldAvatar/README.md)*
+### *[FieldButtom](Atoms/FieldButtom/README.md)*
+### *[FieldDatePiker](Atoms/FieldDatePiker/README.md)*
+### *[FieldImage](Atoms/FieldImage/README.md)*
+### *[FieldNumber](Atoms/FieldNumber/README.md)*
+### *[FieldProgress](Atoms/FieldProgress/README.md)*
+### *[FieldSelect](Atoms/FieldSelect/README.md)*
+### *[FieldSlider](Atoms/FieldSlider/README.md)*
+### *[FieldSwitch](Atoms/FieldSwitch/README.md)*
+### *[FieldTags](Atoms/FieldTags/README.md)*
+### *[FieldText](Atoms/FieldText/README.md)*
 
-## molecula
+## Molecules
 
-<!-- ### [paginacion](molecula/paginacion.md) -->
+### *[ActionPanel](Molecules/ActionPanel.md)*
+### *[Paginations](Molecules/Paginations.md)*
