@@ -20,6 +20,7 @@ jobs:
     name: Build dist
     runs-on: ubuntu-latest
     env:
+      # To build paths on user/organization repository nameespace
       BASE_REPOSITORY: ${{ github.event.repository.name }}
 
     steps:
@@ -36,6 +37,8 @@ jobs:
         run: yarn ci
 
       - name: Compile dist
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
         run: yarn docs:build
 
       - name: Upload dist app
