@@ -16,11 +16,11 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 Progress is used to show the progress of current operation, and inform the user the current status.
 
-### Basic Usage
+### **Basic Usage**
 
 <ProgressBasic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -39,7 +39,7 @@ Progress is used to show the progress of current operation, and inform the user 
 
 ::::
 
-### Internal percentage
+### **Internal percentage**
 
 In this case the percentage takes no additional space
 <br>
@@ -47,7 +47,7 @@ In this case the percentage takes no additional space
 
 <ProgressInternalPercentage />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -88,13 +88,13 @@ In this case the percentage takes no additional space
 
 ::::
 
-### Circular progress bar
+### **Circular progress bar**
 
 You can specify `type` attribute to `circle` to use circular progress bar, and use `width` attribute to change the size of circle.
 
 <ProgressType />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -140,7 +140,7 @@ You can specify `type` attribute to `circle` to use circular progress bar, and u
 
 ::::
 
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -148,7 +148,7 @@ You can specify `type` attribute to `circle` to use circular progress bar, and u
   |    `textInside`  | whether to place the percentage inside progress bar, only works when `type` is 'line'.  | <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -157,13 +157,13 @@ You can specify `type` attribute to `circle` to use circular progress bar, and u
   | `status`    | the current status of progress bar <el-tag effect="Light"> **{{ 'success/exception/warning' }}** </el-tag>  | <el-tag effect="Light">  **{{ 'String' }}** </el-tag> | <el-tag effect="dark" round > **{{ '────' }}** </el-tag> |
   | `indeterminate`    | set indeterminate progress  | <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag> | <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-progress?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash

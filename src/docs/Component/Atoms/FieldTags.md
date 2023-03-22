@@ -15,14 +15,14 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 Used for marking and selection.
 
-### Basic Usage
+### **Basic Usage**
 
 Use the `type` attribute to define Tag's type. In addition, the `color` attribute can be used to set the background color of the Tag.
 
 
 <TagsBasic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -41,7 +41,7 @@ Use the `type` attribute to define Tag's type. In addition, the `color` attribut
 ````
 ::::
 
-### Sizes
+### **Sizes**
 
 Besides default `size`, Tag component provides three additional sizes for you to choose among different scenarios.
 
@@ -50,7 +50,7 @@ Use attribute `size` to set additional sizes with `large`, `default` or `small`.
 
 <TagsSizes />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -67,7 +67,7 @@ Use attribute `size` to set additional sizes with `large`, `default` or `small`.
 ````
 ::::
 
-### Theme
+### **Theme**
 
 Tag provide three different themes: `dark`、`light` and `plain`
 
@@ -76,7 +76,7 @@ Using `effect` to change, default is `light`
 
 <TagsTheme />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -133,14 +133,14 @@ const items = ref<Array<Item>>([
 :::
 ````
 ::::
-### Rounded
+### **Rounded**
 
 Tag can also be rounded like button.
 
 
 <TagsRounded />
 
-#### Viwer Source
+#### **Viwer Source**
 :::: details Code
 
 ````md
@@ -202,14 +202,14 @@ const items = ref<Array<Item>>([
 ::::
 
 
-### Props
+**### Props
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `value`  | Binding Value.  | <el-tag effect="Light">  **{{ 'String' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -218,13 +218,13 @@ const items = ref<Array<Item>>([
   | `round`    | hether Tag is rounded | <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag> | <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
   | `size`    |  size of Switch <el-tag effect=Light> **large / default / small** </el-tag>  | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'String' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ 'default' }}** </el-tag> |
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-tags?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash

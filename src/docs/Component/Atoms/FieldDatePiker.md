@@ -24,7 +24,7 @@ Check the list here of all available formats of Day.js.
 
 <DateFormats />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -106,13 +106,13 @@ const value3 = ref('')
 
 ::::
 
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `type`  | type of the picker  | <el-tag effect="Light">  **{{ 'string' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -134,13 +134,13 @@ const value3 = ref('')
 | `footer` | Customize Default Content Bottom |
 
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-date-picker?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash

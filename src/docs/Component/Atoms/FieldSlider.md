@@ -15,7 +15,7 @@ footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target
 
 Drag the slider within a fixed range.
 
-### Basic usage
+### **Basic usage**
 
 The current value is displayed when the slider is being dragged.
 
@@ -23,7 +23,7 @@ Customize the initial value of the slider by setting the binding value.
 
 <SliderBasic />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -52,13 +52,13 @@ Customize the initial value of the slider by setting the binding value.
 
 ::::
 
-### Step
+### **Step**
 
 Set `step` size with the `step` attribute. You can display breakpoints by setting the `show-stops` attribute
 
 <SliderStep />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -84,7 +84,7 @@ Set `step` size with the `step` attribute. You can display breakpoints by settin
 
 ::::
 
-### Range
+### **Range**
 
 Selecting a range of values is supported.
 
@@ -92,7 +92,7 @@ Setting the `range` attribute activates range mode, where the binding value is a
 
 <SliderRange />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -115,13 +115,13 @@ Setting the `range` attribute activates range mode, where the binding value is a
 
 ::::
 
-### Vertical Mode
+### **Vertical Mode**
 
 Setting the vertical `attribute` to `true` enables vertical mode. In vertical mode, the `height` attribute is required.
 
 <SliderVertical />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -142,7 +142,7 @@ Setting the vertical `attribute` to `true` enables vertical mode. In vertical mo
 
 ::::
 
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -150,7 +150,7 @@ Setting the vertical `attribute` to `true` enables vertical mode. In vertical mo
   |    `textInside`  | whether to place the percentage inside progress bar, only works when `type` is 'line'.  | <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -159,13 +159,13 @@ Setting the vertical `attribute` to `true` enables vertical mode. In vertical mo
   | `status`    | the current status of progress bar <el-tag effect="Light"> **{{ 'success/exception/warning' }}** </el-tag>  | <el-tag effect="Light">  **{{ 'String' }}** </el-tag> | <el-tag effect="dark" round > **{{ '────' }}** </el-tag> |
   | `indeterminate`    | set indeterminate progress  | <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag> | <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
   |  `disabled` | Disable the Button | <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag> | <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-silder?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash

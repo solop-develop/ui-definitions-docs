@@ -19,14 +19,14 @@ When there are plenty of options, use a drop-down menu to display and select des
   This component requires the `<client-only></client-only>` wrap when used in SSR (eg: [Nuxt](https://nuxt.com/v3)) and SSG (eg: [VitePress](https://vitepress.vuejs.org/)).
 :::
 
-### Basic usage
+### **Basic usage**
 
 `v-model` is the `value` of `el-option` that is currently selected.
 
 
 <SelectBase />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -79,13 +79,13 @@ const options = [
 
 ::::
 
-### Disabled Option
+### **Disabled Option**
 
 Set the value of `disabled` in `el-option` to `true` to `disable` this option.
 
 <SelectDisableOption />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -138,7 +138,7 @@ const options = [
 
 ::::
 
-### Disabled Select
+### **Disabled Select**
 
 
 Disable the whole component.
@@ -147,7 +147,7 @@ Set `disabled` of `el-select` to make it `disabled`.
 
 <SelectDisable />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -199,7 +199,7 @@ const options = [
 ::::
 
 
-### Clearable Single Select
+### **Clearable Single Select**
 
 You can clear Select using a clear icon.
 
@@ -213,7 +213,7 @@ Set `clearable` attribute for `el-select` and a clear icon will appear. Note tha
 
 ````md
 
-#### Viwer Source
+#### **Viwer Source**
 
 ```vue
 <template>
@@ -260,7 +260,7 @@ const options = [
 
 ::::
 
-### Basic Multiple Select
+### **Basic Multiple Select**
 
 Multiple select uses tags to display selected options.
 
@@ -269,7 +269,7 @@ Set `multiple` attribute for `el-select` to enable multiple mode. In this case, 
 
 <SelectMultipleSelect />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -330,7 +330,7 @@ const options = [
 
 ::::
 
-### Option filtering
+### **Option filtering**
 
 You can filter options for your desired ones.
 
@@ -339,7 +339,7 @@ Adding `filterable` to `el-select` enables filtering. By default, Select will fi
 
 <SelectFilter />
 
-#### Viwer Source
+#### **Viwer Source**
 
 :::: details Code
 
@@ -389,14 +389,14 @@ const options = [
 
 ::::
 
-### Props
+### **Props**
 
   |   Name    | Description | Type  | Mandatory |
   | :---------: | :-----------: | :-----------------: | :-----------: |
   |    `value`  | binding value  | <el-tag effect="Light">  **{{ 'String' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
   | `optionList`| List of Options that must be displayed in the Select. Within the array of options, the attributes to be received and required are:  <el-tag effect="Light"> **{{ ' { label: title, value: value, disabled: false\true } ' }}** </el-tag> | <el-tag effect="Light">  **{{ 'array' }}** </el-tag>  |  <el-tag effect="dark" round > **{{ 'True' }}** </el-tag> |
 
-### Attributes
+### **Attributes**
 
   |   Name    | Description | Type   | Default |
   | :---------: | :-----------: | :-----------------: | :-----------: |
@@ -412,7 +412,7 @@ const options = [
   | `allowCreate`   |  whether creating new items is allowed. To use this, `filterable` must be `true` | <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'Boolean' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ 'False' }}** </el-tag> |
   | `noDataText`    | displayed text when there is no options, you can also use slot `empty`|  <el-tag effect="Light"> <el-tag effect="Light">  **{{ 'String' }}** </el-tag></el-tag> | <el-tag effect="dark" round > **{{ 'No data' }}** </el-tag> |
 
-### Slots
+### **Slots**
 
 |   Name    | Description |
 | :---------: | :-----------: |
@@ -420,13 +420,13 @@ const options = [
 | `footer` | Customize Default Content Bottom |
 
 
-### Example for Developer
+### **Example for Developer**
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-select?file=app.vue)
 
 
-### Directory
+### **Directory**
 
 
 ```bash
