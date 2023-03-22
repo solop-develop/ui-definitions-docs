@@ -20,7 +20,7 @@
       "content_html": "<span>\n<p>It is a panel with 3 general actions. <strong>Option:</strong> </p>\n<!-- <Badge text=\"Closed\" color=\"green\" />\n<Badge text=\"Cleared\" color=\"green\" />\n<Badge text=\"Check\" color=\"green\" /> -->\n<h2> <strong>Clear Action</strong></h2>\n<p>This Action is used to delete or clear the content of the panel</p>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-22T18:56:36.000Z",
-      "date_modified": "2023-03-22T18:56:36.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -135,7 +135,7 @@
       "content_html": "<span>\nUse `format` to control displayed text's `format` in the input box. Use `value-format` to control binding value's format.\n<p>By default, the component accepts and emits a <code>Date</code> object.</p>\n<p>Check the list here of all available formats of Day.js.</p>\n<div class=\"hint-container warning\">\n<p class=\"hint-container-title\">Note</p>\n<p>Pay attention to capitalization</p>\n</div>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -152,10 +152,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldImage.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldImage.html",
       "summary": "Besides the native features of img, support lazy load, custom placeholder and load failure, etc. Basic Usage Indicate how the image should be resized to fit its container by fit...",
-      "content_html": "<span>\n<p>Besides the native features of img, support lazy load, custom placeholder and load failure, etc.</p>\n<h3> Basic Usage</h3>\n<p>Indicate how the image should be resized to <code>fit</code> its container by <code>fit</code>, same as native <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit\" target=\"_blank\" rel=\"noopener noreferrer\">object-fit.</a></p>\n</span>\n",
+      "content_html": "<span>\n<p>Besides the native features of img, support lazy load, custom placeholder and load failure, etc.</p>\n<h3> <strong>Basic Usage</strong></h3>\n<p>Indicate how the image should be resized to <code>fit</code> its container by <code>fit</code>, same as native <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit\" target=\"_blank\" rel=\"noopener noreferrer\">object-fit.</a></p>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -172,10 +172,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldNumber.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldNumber.html",
       "summary": "Input numerical values with a customizable range. Basic usage Bind a variable to v-model in element and you are set. When inputting invalid string to the input box, input value ...",
-      "content_html": "<span>\n<p>Input numerical values with a customizable range.</p>\n<h3> Basic usage</h3>\n<p>Bind a variable to <code>v-model</code> in <code>&lt;el-input-number&gt;</code> element and you are set.</p>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">Tips</p>\n<p>When inputting invalid string to the input box, input value will emit <code>NaN</code> to the upper layer as result of error</p>\n</div>\n</span>\n",
+      "content_html": "<span>\n<p>Input numerical values with a customizable range.</p>\n<h3> <strong>Basic usage</strong></h3>\n<p>Bind a variable to <code>v-model</code> in <code>&lt;el-input-number&gt;</code> element and you are set.</p>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">Tips</p>\n<p>When inputting invalid string to the input box, input value will emit <code>NaN</code> to the upper layer as result of error</p>\n</div>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -192,10 +192,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldProgress.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldProgress.html",
       "summary": "Progress is used to show the progress of current operation, and inform the user the current status. Basic Usage Viwer Source Code Circular progress bar You can specify type attr...",
-      "content_html": "<span>\n<p>Progress is used to show the progress of current operation, and inform the user the current status.</p>\n<h3> Basic Usage</h3>\n</span>\n",
+      "content_html": "<span>\n<p>Progress is used to show the progress of current operation, and inform the user the current status.</p>\n<h3> <strong>Basic Usage</strong></h3>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -212,10 +212,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSelect.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSelect.html",
       "summary": "When there are plenty of options, use a drop-down menu to display and select desired ones. This component requires the wrap when used in SSR (eg: Nuxt (https://nuxt.com/v3)) and...",
-      "content_html": "<span>\n<p>When there are plenty of options, use a drop-down menu to display and select desired ones.</p>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">Tips</p>\n<p>This component requires the <code>&lt;client-only&gt;&lt;/client-only&gt;</code> wrap when used in SSR (eg: <a href=\"https://nuxt.com/v3\" target=\"_blank\" rel=\"noopener noreferrer\">Nuxt</a>) and SSG (eg: <a href=\"https://vitepress.vuejs.org/\" target=\"_blank\" rel=\"noopener noreferrer\">VitePress</a>).</p>\n</div>\n<h3> Basic usage</h3>\n<p><code>v-model</code> is the <code>value</code> of <code>el-option</code> that is currently selected.</p>\n</span>\n",
+      "content_html": "<span>\n<p>When there are plenty of options, use a drop-down menu to display and select desired ones.</p>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">Tips</p>\n<p>This component requires the <code>&lt;client-only&gt;&lt;/client-only&gt;</code> wrap when used in SSR (eg: <a href=\"https://nuxt.com/v3\" target=\"_blank\" rel=\"noopener noreferrer\">Nuxt</a>) and SSG (eg: <a href=\"https://vitepress.vuejs.org/\" target=\"_blank\" rel=\"noopener noreferrer\">VitePress</a>).</p>\n</div>\n<h3> <strong>Basic usage</strong></h3>\n<p><code>v-model</code> is the <code>value</code> of <code>el-option</code> that is currently selected.</p>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -232,10 +232,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSlider.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSlider.html",
       "summary": "Drag the slider within a fixed range. Basic usage The current value is displayed when the slider is being dragged. Customize the initial value of the slider by setting the bindi...",
-      "content_html": "<span>\n<p>Drag the slider within a fixed range.</p>\n<h3> Basic usage</h3>\n<p>The current value is displayed when the slider is being dragged.</p>\n<p>Customize the initial value of the slider by setting the binding value.</p>\n</span>\n",
+      "content_html": "<span>\n<p>Drag the slider within a fixed range.</p>\n<h3> <strong>Basic usage</strong></h3>\n<p>The current value is displayed when the slider is being dragged.</p>\n<p>Customize the initial value of the slider by setting the binding value.</p>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -252,9 +252,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSwitch.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSwitch.html",
       "summary": "Switch is used for switching between two opposing states. Basic usage Bind v-model to a Boolean typed variable. The --el-switch-on-color and --el-switch-off-color CSS variables ...",
-      "content_html": "<span>\n<p>Switch is used for switching between two opposing states.</p>\n<h3> Basic usage</h3>\n<p>Bind <code>v-model</code> to a <code>Boolean</code> typed variable. The <code>--el-switch-on-color</code> and <code>--el-switch-off-color</code> CSS variables decides the background color in two states.</p>\n</span>\n",
+      "content_html": "<span>\n<p>Switch is used for switching between two opposing states.</p>\n<h3> <strong>Basic usage</strong></h3>\n<p>Bind <code>v-model</code> to a <code>Boolean</code> typed variable. The <code>--el-switch-on-color</code> and <code>--el-switch-off-color</code> CSS variables decides the background color in two states.</p>\n</span>\n",
+      "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -271,10 +272,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldTags.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldTags.html",
       "summary": "Used for marking and selection. Basic Usage Use the type attribute to define Tag's type. In addition, the color attribute can be used to set the background color of the Tag. Viw...",
-      "content_html": "<span>\n<p>Used for marking and selection.</p>\n<h3> Basic Usage</h3>\n<p>Use the <code>type</code> attribute to define Tag's type. In addition, the <code>color</code> attribute can be used to set the background color of the Tag.</p>\n</span>\n",
+      "content_html": "<span>\n<p>Used for marking and selection.</p>\n<h3> <strong>Basic Usage</strong></h3>\n<p>Use the <code>type</code> attribute to define Tag's type. In addition, the <code>color</code> attribute can be used to set the background color of the Tag.</p>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",
@@ -291,10 +292,10 @@
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldText.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldText.html",
       "summary": "Input data using mouse or keyboard.. Basic Basic usage Viwer Source Code Clearable Make the Input clearable with the clearable attribute. Viwer SourceCode Textarea Resizable for...",
-      "content_html": "<span>\nInput data using mouse or keyboard..\n<h3> Basic</h3>\n<p>Basic usage</p>\n</span>\n",
+      "content_html": "<span>\nInput data using mouse or keyboard..\n<h3> <strong>Basic</strong></h3>\n<p>Basic usage</p>\n</span>\n",
       "image": "https://developer.stackblitz.com/img/open_in_stackblitz.svg",
       "date_published": "2023-03-21T20:48:34.000Z",
-      "date_modified": "2023-03-21T20:48:34.000Z",
+      "date_modified": "2023-03-22T19:22:25.000Z",
       "authors": [
         {
           "name": "Elsio Sanchez",

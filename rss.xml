@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/</link>
     <description>A user interface definition documentation based on components, compositions, and pattern layouts.</description>
     <language>en-US</language>
-    <pubDate>Wed, 22 Mar 2023 19:08:50 GMT</pubDate>
-    <lastBuildDate>Wed, 22 Mar 2023 19:08:50 GMT</lastBuildDate>
+    <pubDate>Wed, 22 Mar 2023 19:24:41 GMT</pubDate>
+    <lastBuildDate>Wed, 22 Mar 2023 19:24:41 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by Elsio Sanchez</copyright>
@@ -166,7 +166,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 <p>Besides the native features of img, support lazy load, custom placeholder and load failure, etc.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 <p>Indicate how the image should be resized to <code>fit</code> its container by <code>fit</code>, same as native <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank" rel="noopener noreferrer">object-fit.</a></p>
 </span>
 ]]></content:encoded>
@@ -183,7 +183,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 <p>Input numerical values with a customizable range.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>Bind a variable to <code>v-model</code> in <code>&lt;el-input-number&gt;</code> element and you are set.</p>
 <div class="hint-container tip">
 <p class="hint-container-title">Tips</p>
@@ -204,7 +204,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 <p>Progress is used to show the progress of current operation, and inform the user the current status.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 </span>
 ]]></content:encoded>
       <enclosure url="https://developer.stackblitz.com/img/open_in_stackblitz.svg" type="image/svg+xml"/>
@@ -224,7 +224,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
 <p class="hint-container-title">Tips</p>
 <p>This component requires the <code>&lt;client-only&gt;&lt;/client-only&gt;</code> wrap when used in SSR (eg: <a href="https://nuxt.com/v3" target="_blank" rel="noopener noreferrer">Nuxt</a>) and SSG (eg: <a href="https://vitepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VitePress</a>).</p>
 </div>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p><code>v-model</code> is the <code>value</code> of <code>el-option</code> that is currently selected.</p>
 </span>
 ]]></content:encoded>
@@ -241,7 +241,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 <p>Drag the slider within a fixed range.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>The current value is displayed when the slider is being dragged.</p>
 <p>Customize the initial value of the slider by setting the binding value.</p>
 </span>
@@ -259,10 +259,11 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 <p>Switch is used for switching between two opposing states.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>Bind <code>v-model</code> to a <code>Boolean</code> typed variable. The <code>--el-switch-on-color</code> and <code>--el-switch-off-color</code> CSS variables decides the background color in two states.</p>
 </span>
 ]]></content:encoded>
+      <enclosure url="https://developer.stackblitz.com/img/open_in_stackblitz.svg" type="image/svg+xml"/>
     </item>
     <item>
       <title>Tags</title>
@@ -275,7 +276,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 <p>Used for marking and selection.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 <p>Use the <code>type</code> attribute to define Tag's type. In addition, the <code>color</code> attribute can be used to set the background color of the Tag.</p>
 </span>
 ]]></content:encoded>
@@ -292,7 +293,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
       <pubDate>Tue, 21 Mar 2023 20:48:34 GMT</pubDate>
       <content:encoded><![CDATA[<span>
 Input data using mouse or keyboard..
-<h3> Basic</h3>
+<h3> <strong>Basic</strong></h3>
 <p>Basic usage</p>
 </span>
 ]]></content:encoded>

@@ -9,7 +9,7 @@
   </author>
   <logo>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/logo.svg</logo>
   <rights>Copyright by Elsio Sanchez</rights>
-  <updated>2023-03-22T19:08:50.731Z</updated>
+  <updated>2023-03-22T19:24:41.295Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/"/>
@@ -25,7 +25,7 @@
     <title type="text">Action Panel</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html"/>
-    <updated>2023-03-22T18:56:36.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>It is a panel with 3 general actions. <strong>Option:</strong> </p>
 <!-- <Badge text="Closed" color="green" />
@@ -271,7 +271,7 @@ Commonly used button.
     <title type="text">Date Picker</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldDatePiker.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 Use `format` to control displayed text's `format` in the input box. Use `value-format` to control binding value's format.
 <p>By default, the component accepts and emits a <code>Date</code> object.</p>
@@ -308,15 +308,15 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Image</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldImage.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldImage.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Besides the native features of img, support lazy load, custom placeholder and load failure, etc.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 <p>Indicate how the image should be resized to <code>fit</code> its container by <code>fit</code>, same as native <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank" rel="noopener noreferrer">object-fit.</a></p>
 </span>]]></summary>
     <content type="html"><![CDATA[<span>
 <p>Besides the native features of img, support lazy load, custom placeholder and load failure, etc.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 <p>Indicate how the image should be resized to <code>fit</code> its container by <code>fit</code>, same as native <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank" rel="noopener noreferrer">object-fit.</a></p>
 </span>
 ]]></content>
@@ -337,10 +337,10 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Number</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldNumber.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldNumber.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Input numerical values with a customizable range.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>Bind a variable to <code>v-model</code> in <code>&lt;el-input-number&gt;</code> element and you are set.</p>
 <div class="hint-container tip">
 <p class="hint-container-title">Tips</p>
@@ -349,7 +349,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
 </span>]]></summary>
     <content type="html"><![CDATA[<span>
 <p>Input numerical values with a customizable range.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>Bind a variable to <code>v-model</code> in <code>&lt;el-input-number&gt;</code> element and you are set.</p>
 <div class="hint-container tip">
 <p class="hint-container-title">Tips</p>
@@ -374,15 +374,15 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Progress</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldProgress.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldProgress.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Progress is used to show the progress of current operation, and inform the user the current status.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 </span>
 ]]></summary>
     <content type="html"><![CDATA[<span>
 <p>Progress is used to show the progress of current operation, and inform the user the current status.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 </span>
 ]]></content>
     <author>
@@ -402,14 +402,14 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Select</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSelect.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSelect.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>When there are plenty of options, use a drop-down menu to display and select desired ones.</p>
 <div class="hint-container tip">
 <p class="hint-container-title">Tips</p>
 <p>This component requires the <code>&lt;client-only&gt;&lt;/client-only&gt;</code> wrap when used in SSR (eg: <a href="https://nuxt.com/v3" target="_blank" rel="noopener noreferrer">Nuxt</a>) and SSG (eg: <a href="https://vitepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VitePress</a>).</p>
 </div>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p><code>v-model</code> is the <code>value</code> of <code>el-option</code> that is currently selected.</p>
 </span>]]></summary>
     <content type="html"><![CDATA[<span>
@@ -418,7 +418,7 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
 <p class="hint-container-title">Tips</p>
 <p>This component requires the <code>&lt;client-only&gt;&lt;/client-only&gt;</code> wrap when used in SSR (eg: <a href="https://nuxt.com/v3" target="_blank" rel="noopener noreferrer">Nuxt</a>) and SSG (eg: <a href="https://vitepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VitePress</a>).</p>
 </div>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p><code>v-model</code> is the <code>value</code> of <code>el-option</code> that is currently selected.</p>
 </span>
 ]]></content>
@@ -439,17 +439,17 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Avance</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSlider.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSlider.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Drag the slider within a fixed range.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>The current value is displayed when the slider is being dragged.</p>
 <p>Customize the initial value of the slider by setting the binding value.</p>
 </span>
 ]]></summary>
     <content type="html"><![CDATA[<span>
 <p>Drag the slider within a fixed range.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>The current value is displayed when the slider is being dragged.</p>
 <p>Customize the initial value of the slider by setting the binding value.</p>
 </span>
@@ -471,15 +471,15 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Switch</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSwitch.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldSwitch.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Switch is used for switching between two opposing states.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>Bind <code>v-model</code> to a <code>Boolean</code> typed variable. The <code>--el-switch-on-color</code> and <code>--el-switch-off-color</code> CSS variables decides the background color in two states.</p>
 </span>]]></summary>
     <content type="html"><![CDATA[<span>
 <p>Switch is used for switching between two opposing states.</p>
-<h3> Basic usage</h3>
+<h3> <strong>Basic usage</strong></h3>
 <p>Bind <code>v-model</code> to a <code>Boolean</code> typed variable. The <code>--el-switch-on-color</code> and <code>--el-switch-off-color</code> CSS variables decides the background color in two states.</p>
 </span>
 ]]></content>
@@ -500,16 +500,16 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Tags</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldTags.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldTags.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 <p>Used for marking and selection.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 <p>Use the <code>type</code> attribute to define Tag's type. In addition, the <code>color</code> attribute can be used to set the background color of the Tag.</p>
 </span>
 ]]></summary>
     <content type="html"><![CDATA[<span>
 <p>Used for marking and selection.</p>
-<h3> Basic Usage</h3>
+<h3> <strong>Basic Usage</strong></h3>
 <p>Use the <code>type</code> attribute to define Tag's type. In addition, the <code>color</code> attribute can be used to set the background color of the Tag.</p>
 </span>
 ]]></content>
@@ -530,16 +530,16 @@ Use `format` to control displayed text's `format` in the input box. Use `value-f
     <title type="text">Text</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldText.html</id>
     <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Atoms/FieldText.html"/>
-    <updated>2023-03-21T20:48:34.000Z</updated>
+    <updated>2023-03-22T19:22:25.000Z</updated>
     <summary type="html"><![CDATA[<span>
 Input data using mouse or keyboard..
-<h3> Basic</h3>
+<h3> <strong>Basic</strong></h3>
 <p>Basic usage</p>
 </span>
 ]]></summary>
     <content type="html"><![CDATA[<span>
 Input data using mouse or keyboard..
-<h3> Basic</h3>
+<h3> <strong>Basic</strong></h3>
 <p>Basic usage</p>
 </span>
 ]]></content>
