@@ -10,15 +10,15 @@ on:
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
+    env:
+      # To build paths on user/organization repository nameespace
+      BASE_REPOSITORY: ${{ github.event.repository.name }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          # if your docs needs submodules, uncomment the following line
-          # submodules: true
-
-
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -26,15 +26,14 @@ jobs:
           node-version: 18
           cache: yarn
 
-      - name: Install Deps
-        run: yarn install --frozen-lockfile
+      - name: Install packages
+        run: yarn ci
 
-      - name: Build Docs
+      - name: Compile dist
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           yarn run docs:build
-          > src/.vuepress/dist
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:

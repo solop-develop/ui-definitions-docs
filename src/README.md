@@ -5,18 +5,18 @@ title: Inicio
 heroImage: /logo.svg
 heroText: UI Definitions Docs
 tagline: A user interface definition documentation based on components, compositions, and pattern layouts.
-actions:
-  - text: Componentes
-    link: /docs/Component/
+# actions:
+#   - text: Componentes
+#     link: /docs/Component/
 
 features:
-  - title: ZK UI
-    icon: /assets/icon/logo.png
-    details: Ajax (UI) for ADempiere
-  - title: New UI for ADempiere
+  # - title: ZK UI
+  #   icon: /assets/icon/logo.png
+  #   details: Ajax (UI) for ADempiere
+  - title: Components
     icon: /assets/img/vue-logo.png
-    details: Completely created on Javascript with Vue
-    # link: https://theme-hope.vuejs.press/zh/guide/markdown/
+    details: The Components are separated into Atoms, Molecules and Organism
+    link: /docs/Component/
   - title: Adempiere-vue
     icon: /assets/icon/logo.png
     details: The new UI for ADempiere ERP

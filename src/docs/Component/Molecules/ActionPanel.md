@@ -3,10 +3,10 @@ title: Action Panel
 # icon: creative
 category:
 - Component
-- Molecula
+- Molecule
 tag:
 - ActionPanel
-- Molecula
+- Molecule
 - Component
 footer: '<a href="https://github.com/adempiere" rel="noopener noreferrer" target="_blank">ADempiere Community</a> | <a href="https://www.adempiere.io/about/site">About Site</a>'
 ---
@@ -268,7 +268,7 @@ const handleRefresh = () => {
 ## **Example for Developer**
 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/fields-avatar?file=app.vue)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/molecule-action-panel?file=app.vue)
 
 
 ## **Directory**
@@ -281,10 +281,6 @@ const handleRefresh = () => {
             └── Moleculas                         # Moleculas components
                 └── ActionPanel                   # Molecule Action Panel specific components.
 ```
-
-
-
-
 
 </span>
 
