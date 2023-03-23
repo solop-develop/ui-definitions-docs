@@ -13,6 +13,42 @@
   ],
   "items": [
     {
+      "title": "Module Extend Pages",
+      "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/ModuleExtendPages.html",
+      "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/ModuleExtendPages.html",
+      "summary": "Examples This example defines a new test page using extendPages within a module. Import new Module. Add your module inside the Module Root folder. Add Module Add New Module to C...",
+      "content_html": "<h2> Examples</h2>\n<p>This example defines a new <code>test</code> page using extendPages within a module.</p>\n<h2> Import new Module.</h2>\n<p>Add your module inside the <code>Module</code> Root folder.</p>\n<div class=\"language-bash line-numbers-mode\" data-ext=\"sh\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h2> Add Module</h2>\n<p>Add New Module to Configuration File of <code>nuxt.config.ts</code></p>\n\n<hr>\n<h2> Call the new Module</h2>\n<p>We add a new button in the <code>pages/index.vue</code> file calling the new imported module</p>\n\n<hr>\n<h2> Example</h2>\n<iframe data-v-6d2cc665=\"\" src=\"https://codesandbox.io/embed/github/elsiosanchez/Module-Extend-Pages/main?hidenavigation=1&amp;theme=dark\" title=\"Sandbox editor\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\" style=\"width:100%; height:900px; border:0; border-radius: 4px; overflow:auto;\" class=\"w-full h-full min-h-[2700px] overflow-hidden bg-gray-100 dark:bg-gray-800\"></iframe>",
+      "date_published": "2023-03-23T21:42:48.000Z",
+      "date_modified": "2023-03-23T21:42:48.000Z",
+      "authors": [
+        {
+          "name": "Elsio Sanchez",
+          "url": "https://github.com/elsiosanchez"
+        }
+      ],
+      "tags": [
+        "Docs"
+      ]
+    },
+    {
+      "title": "Pages Directory",
+      "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/",
+      "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/",
+      "summary": "A file-based routing to create routes within your web application using Vue Router (https://router.vuejs.org/) under the hood. Usage Pages are Vue components and can have any va...",
+      "content_html": "<p>A file-based routing to create routes within your web application using <code>[Vue Router](https://router.vuejs.org/)</code> under the hood.</p>\n<h2> Usage</h2>\n<p>Pages are Vue components and can have any <a href=\"https://nuxt.com/docs/api/configuration/nuxt-config#extensions\" target=\"_blank\" rel=\"noopener noreferrer\">valid extension</a> that Nuxt supports (by default <code>.vue</code>, <code>.js</code>, <code>.jsx</code>, <code>.mjs</code>, <code>.ts</code> or <code>.tsx</code>). Nuxt will automatically create a route for every page in your <code>~/pages/</code> directory.</p>\n<div class=\"language-vue line-numbers-mode\" data-ext=\"vue\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>The <code>pages/index.vue</code> file will be mapped to the <code>/</code> route of your application.</p>\n<p>If you are using <a href=\"/docs/guide/directory-structure/app\" target=\"_blank\" rel=\"noopener noreferrer\">app.vue</a>, make sure to use the <code>&lt;NuxtPage/&gt;</code> component to display the current page:</p>\n<div class=\"language-vue line-numbers-mode\" data-ext=\"vue\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>Pages <strong>must have a single root element</strong> to allow route transitions between pages. (HTML comments are considered elements as well.)</p>\n<p>This means that when the route is server-rendered, or statically generated, you will be able to see its contents correctly, but when you navigate towards that route during client-side navigation the transition between routes will fail and you'll see that the route will not be rendered.</p>\n<p>Here are some examples to illustrate what a page with a single root element looks like:</p>\n\n<hr>\n<p>You can use the <code>NuxtLink</code> tool to navigate between pages</p>\n",
+      "date_published": "2023-03-23T21:42:48.000Z",
+      "date_modified": "2023-03-23T21:42:48.000Z",
+      "authors": [
+        {
+          "name": "Elsio Sanchez",
+          "url": "https://github.com/elsiosanchez"
+        }
+      ],
+      "tags": [
+        "Docs"
+      ]
+    },
+    {
       "title": "Action Panel",
       "url": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html",
       "id": "https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html",

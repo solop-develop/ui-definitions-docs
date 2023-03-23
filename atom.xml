@@ -9,18 +9,97 @@
   </author>
   <logo>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/logo.svg</logo>
   <rights>Copyright by Elsio Sanchez</rights>
-  <updated>2023-03-22T19:24:41.295Z</updated>
+  <updated>2023-03-23T21:45:21.143Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/"/>
+  <category term="Docs"/>
   <category term="Component"/>
   <category term="Molecule"/>
-  <category term="Docs"/>
   <category term="Atom"/>
   <contributor>
     <name>Elsio Sanchez</name>
     <uri>https://github.com/elsiosanchez</uri>
   </contributor>
+  <entry>
+    <title type="text">Module Extend Pages</title>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/ModuleExtendPages.html</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/ModuleExtendPages.html"/>
+    <updated>2023-03-23T21:42:48.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Examples</h2>
+<p>This example defines a new <code>test</code> page using extendPages within a module.</p>
+<h2> Import new Module.</h2>
+<p>Add your module inside the <code>Module</code> Root folder.</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>└─── src                                           <span class="token comment"># Main source code.</span>
+    └─── component                                 <span class="token comment"># Global components</span>
+    └─── modules                                   <span class="token comment"># Global Modules</span>
+        └─── myModule                              <span class="token comment"># Location of the specific Module you are importing. Example (myModule)</span>
+                └─── pages                         <span class="token comment"># Global Pages</span>
+                    └─── <span class="token builtin class-name">test</span>                     <span class="token comment"># Pages test.vue specific components</span>
+                └─── index                         <span class="token comment"># Imported Module Definition</span>
+    └─── pages                                     <span class="token comment"># Global Pages</span>
+        └─── index                                 <span class="token comment"># Pages index.vue specific components</span>
+        └─── about                                 <span class="token comment"># Pages about.vue specific components</span>
+        └─── home                                  <span class="token comment"># Pages home.vue specific components</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2> Examples</h2>
+<p>This example defines a new <code>test</code> page using extendPages within a module.</p>
+<h2> Import new Module.</h2>
+<p>Add your module inside the <code>Module</code> Root folder.</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Add Module</h2>
+<p>Add New Module to Configuration File of <code>nuxt.config.ts</code></p>
+
+<hr>
+<h2> Call the new Module</h2>
+<p>We add a new button in the <code>pages/index.vue</code> file calling the new imported module</p>
+
+<hr>
+<h2> Example</h2>
+<iframe data-v-6d2cc665="" src="https://codesandbox.io/embed/github/elsiosanchez/Module-Extend-Pages/main?hidenavigation=1&amp;theme=dark" title="Sandbox editor" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin" style="width:100%; height:900px; border:0; border-radius: 4px; overflow:auto;" class="w-full h-full min-h-[2700px] overflow-hidden bg-gray-100 dark:bg-gray-800"></iframe>]]></content>
+    <author>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </author>
+    <category term="Docs"/>
+    <contributor>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </contributor>
+    <published>2023-03-23T21:42:48.000Z</published>
+    <rights>Copyright by Elsio Sanchez</rights>
+  </entry>
+  <entry>
+    <title type="text">Pages Directory</title>
+    <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/</id>
+    <link href="https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Paages/"/>
+    <updated>2023-03-23T21:42:48.000Z</updated>
+    <summary type="html"><![CDATA[<p>A file-based routing to create routes within your web application using <code>[Vue Router](https://router.vuejs.org/)</code> under the hood.</p>
+<h2> Usage</h2>
+<p>Pages are Vue components and can have any <a href="https://nuxt.com/docs/api/configuration/nuxt-config#extensions" target="_blank" rel="noopener noreferrer">valid extension</a> that Nuxt supports (by default <code>.vue</code>, <code>.js</code>, <code>.jsx</code>, <code>.mjs</code>, <code>.ts</code> or <code>.tsx</code>). Nuxt will automatically create a route for every page in your <code>~/pages/</code> directory.</p>]]></summary>
+    <content type="html"><![CDATA[<p>A file-based routing to create routes within your web application using <code>[Vue Router](https://router.vuejs.org/)</code> under the hood.</p>
+<h2> Usage</h2>
+<p>Pages are Vue components and can have any <a href="https://nuxt.com/docs/api/configuration/nuxt-config#extensions" target="_blank" rel="noopener noreferrer">valid extension</a> that Nuxt supports (by default <code>.vue</code>, <code>.js</code>, <code>.jsx</code>, <code>.mjs</code>, <code>.ts</code> or <code>.tsx</code>). Nuxt will automatically create a route for every page in your <code>~/pages/</code> directory.</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>The <code>pages/index.vue</code> file will be mapped to the <code>/</code> route of your application.</p>
+<p>If you are using <a href="/docs/guide/directory-structure/app" target="_blank" rel="noopener noreferrer">app.vue</a>, make sure to use the <code>&lt;NuxtPage/&gt;</code> component to display the current page:</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Pages <strong>must have a single root element</strong> to allow route transitions between pages. (HTML comments are considered elements as well.)</p>
+<p>This means that when the route is server-rendered, or statically generated, you will be able to see its contents correctly, but when you navigate towards that route during client-side navigation the transition between routes will fail and you'll see that the route will not be rendered.</p>
+<p>Here are some examples to illustrate what a page with a single root element looks like:</p>
+
+<hr>
+<p>You can use the <code>NuxtLink</code> tool to navigate between pages</p>
+]]></content>
+    <author>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </author>
+    <category term="Docs"/>
+    <contributor>
+      <name>Elsio Sanchez</name>
+      <uri>https://github.com/elsiosanchez</uri>
+    </contributor>
+    <published>2023-03-23T21:42:48.000Z</published>
+    <rights>Copyright by Elsio Sanchez</rights>
+  </entry>
   <entry>
     <title type="text">Action Panel</title>
     <id>https://vuepress-theme-hope-docs-demo.netlify.app/ui-definitions-docs/docs/Component/Molecules/ActionPanel.html</id>
