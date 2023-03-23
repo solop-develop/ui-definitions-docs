@@ -76,6 +76,11 @@ import PaginationBasic from './Component/Molecula/Paginations/PaginationBasic.vu
 import PaginationHide from './Component/Molecula/Paginations/PaginationHide.vue';
 import PaginationEvents from './Component/Molecula/Paginations/PaginationEvents.vue';
 
+/**
+ * Pages
+ */
+import pagesBasic from './Component/Pages/pagesBasic.vue'
+
 export default defineClientConfig({
   enhance: ({ app, router, siteData }) => {
     app.use(ElementPlus)
@@ -148,6 +153,7 @@ export default defineClientConfig({
     app.component('PaginationBasic', PaginationBasic)
     app.component('PaginationHide', PaginationHide)
     app.component('PaginationEvents', PaginationEvents)
-
+    // Pages
+    app.component('pagesBasic', pagesBasic)
   },
 });
